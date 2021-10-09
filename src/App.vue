@@ -45,7 +45,7 @@
   }
   .customInput{
     background: #EBF2F2;
-    border-radius: 5px;
+    border-radius: 0.25rem;
     height:56px;
   }
   .customInput:focus,
