@@ -44,8 +44,6 @@
 
                         <!-- if user has not signed in -->
 
-                        
-
                         <li v-if="user === null" class="nav-item mt-2 pt-2">
                             <router-link to="login"><a class="nav-link text-dark" href="#">Login</a></router-link>
                         </li>
@@ -140,7 +138,7 @@
 
                     
                     <li class="nav-item mt-4 mt-md-0 pt-2">
-                        <button class="btn text-white pt-2 pb-2 bg-dark">Create events</button>
+                        <button class="btn text-white pt-2 pb-2 bg-dark pr-5 pl-5">Create events</button>
                     </li>
                     
                 </ul>
