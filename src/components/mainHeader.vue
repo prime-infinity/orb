@@ -10,6 +10,8 @@
                 </span>
             </transition>
 
+            
+
             <!-- mobile slide in menu -->
             <div id="menuFloat" class="d-none fixed-top" :class="[mobileMenu ? 'animate__animated animate__bounceInLeft d-block':'', ]">
 
@@ -18,7 +20,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <!-- if user has signed in -->
-                        <li v-if="user !== null" class="nav-item mt-4 pt-1">
+                        <li v-if="user !== null" class="nav-item mt-4 pt-1 dropdown">
                             <a id="navbarDropdown" class="nav-link profiledropdown dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="icon align-middle">
                                     <i class="las la-user"></i>
@@ -33,7 +35,7 @@
                                     </a>
                                 </router-link>
 
-                                <a class="dropdown-item" @click="logout">
+                                <a class="dropdown-item">
                                     Logout
                                 </a>
                                 
@@ -128,7 +130,7 @@
                                 </a>
                             </router-link>
 
-                            <a class="dropdown-item" @click="logout">
+                            <a class="dropdown-item">
                                 Logout
                             </a>
                             

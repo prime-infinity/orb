@@ -96,6 +96,10 @@
                     this.registering = false
                 }, 1500);
 
+                /* for test purposes */
+                this.$store.commit("registerUser",this.userData)
+                this.$router.push("/")
+
                 /*axios.post('/register',this.userData)
                 .then((res) =>{
                     this.$router.push("/")
