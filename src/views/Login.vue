@@ -86,6 +86,10 @@
                 setTimeout(() => {
                     this.loggin = false
                 }, 1500);
+
+                /* for test purposes */
+                this.$store.commit("registerUser",this.userData)
+                this.$router.push("/")
                
                 /*axios.post('/login',this.userData)
                 .then((res) =>{
