@@ -2,23 +2,23 @@
     <div class="row justify-content-center counter-main mt-5 pt-5">
       
         <div class="col-1 mr-1 ml-1 mr-md-0 ml-md-0 text-center">
-            <span class="counts" :class="[isInFirst ? 'is-in-here':'',]">1</span>
+            <span @click="goToEventCreation(0)" class="counts" :class="[isInFirst ? 'is-in-here':'',]">1</span>
         </div>
         
         <div class="col-1 mr-1 ml-1 mr-md-0 ml-md-0 text-center">
-            <span class="counts" :class="[isInSecond ? 'is-in-here':'',]">2</span>
+            <span @click="goToEventCreation(1)" class="counts" :class="[isInSecond ? 'is-in-here':'',]">2</span>
         </div>
 
         <div class="col-1 mr-1 ml-1 mr-md-0 ml-md-0 text-center">
-            <span class="counts" :class="[isInThird ? 'is-in-here':'',]">3</span>
+            <span @click="goToEventCreation(2)" class="counts" :class="[isInThird ? 'is-in-here':'',]">3</span>
         </div>
 
         <div class="col-1 mr-1 ml-1 mr-md-0 ml-md-0 text-center">
-            <span class="counts" :class="[isInFourth ? 'is-in-here':'',]">4</span>
+            <span @click="goToEventCreation(3)" class="counts" :class="[isInFourth ? 'is-in-here':'',]">4</span>
         </div>
 
         <div class="col-1 mr-1 ml-1 mr-md-0 ml-md-0 text-center">
-            <span class="counts" :class="[isInFifth ? 'is-in-here':'',]">5</span>
+            <span @click="goToEventCreation(4)" class="counts" :class="[isInFifth ? 'is-in-here':'',]">5</span>
         </div>
       
     </div>
@@ -75,6 +75,11 @@
             },
 
         },
+        methods:{
+            goToEventCreation:function(e){
+                this.$store.commit("goToEventCreation",e)
+            }
+        }
 
     }
 </script>

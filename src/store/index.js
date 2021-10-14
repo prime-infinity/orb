@@ -15,6 +15,9 @@ export default new Vuex.Store({
     incrementEventCounter(state,gotten){
       state.createEventCount = gotten;
     },
+    goToEventCreation(state,gotten){
+      state.createEventCount = gotten
+    }
   },
   actions: {
   },

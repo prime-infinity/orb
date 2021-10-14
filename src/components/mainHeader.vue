@@ -87,7 +87,7 @@
                             </router-link>
                         </li>
                         
-                        <button class="btn customInputButton bg-dark">Create Event</button>
+                        <button @click="createEvent" class="btn customInputButton bg-dark">Create Event</button>
                         
                     </ul>
                 </div>
@@ -140,7 +140,7 @@
 
                     
                     <li class="nav-item mt-4 mt-md-0 pt-2">
-                        <button class="btn text-white pt-2 pb-2 bg-dark pr-5 pl-5">Create events</button>
+                        <button @click="createEvent" class="btn text-white pt-2 pb-2 bg-dark pr-5 pl-5">Create events</button>
                     </li>
                     
                 </ul>
@@ -188,6 +188,14 @@
             }),
         },
         methods:{
+            createEvent:function(){
+                if(this.user === null){
+                    this.$router.push({path:'login'})
+                }
+                if(this.user !== null){
+                    this.$router.push({path:'createevent'})
+                }
+            },
             toggleMobileMenu:function(){
                 this.mobileMenu ? this.mobileMenu = false : this.mobileMenu = true
             },

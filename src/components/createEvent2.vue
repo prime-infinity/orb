@@ -28,7 +28,7 @@
                                 </div>
 
                                 <div class="col-6 mb-4">
-                                    <button :disabled="cannotAddDate" class="btn customInputButton mt-5" @click="addDateAndTimeMul">Add date and time</button>
+                                    <button :disabled="cannotAddDate" class="btn customInputButton mt-5" @click="addDateAndTimeMul">Add</button>
                                 </div>
 
                                 <div class="col-6 mb-4">
@@ -181,12 +181,13 @@
 
 <script>
 
-    import 'vue-date-pick/dist/vueDatePick.css';
+    //import 'vue-date-pick/dist/vueDatePick.css';
+    import '../ui/vueDatePick.css'
 
     import VueTimepicker from '../ui/vue-timepicker'
 
     import vueDatePickCustom from '../ui/vueDatePickCustom'
-    import $ from 'jquery'
+    //import $ from 'jquery'
 
     export default {
         name: 'createEvent2',
@@ -285,7 +286,7 @@
 
                 this.mDates.push(newDate)
                 
-                $('#Modal').modal('hide')
+                //$('#Modal').modal('hide')
                 console.log(this.mDates[0])
             },
             selSingle:function(){
