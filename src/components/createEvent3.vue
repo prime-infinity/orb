@@ -170,14 +170,14 @@
             },
             hasCropImage:function(){
                 this.isCropping = true
-                let storex = this.$store;
+                //let storex = this.$store;
                 this.cropImgTwo = this.$refs.ucropper.getCroppedCanvas().toBlob((blob) => {
                     var blobToFile = new File([blob], this.userProfileImageName, {type: this.userProfileImageType, lastModified: Date.now()});
                     var Data = new FormData();
 
-                    var settings = { headers:{
+                    /*var settings = { headers:{
                         'content-type':'multipart/form-data'}
-                    }
+                    }*/
 
                     new Compressor(blobToFile, {
                         quality: 0.5,
@@ -193,7 +193,7 @@
                             async function Uploadpic(){
                                 try {
 
-                                    const dataFromAsync = await axios.post('/web/changeOrgainProfilePic',Data,settings)
+                                    //const dataFromAsync = await axios.post('/web/changeOrgainProfilePic',Data,settings)
                                     /*storex.commit("changeOrgainImage",dataFromAsync.data);*/
                             
                                 } catch (error) {
