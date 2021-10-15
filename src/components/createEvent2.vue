@@ -148,7 +148,7 @@
                                     <span>Closing Time:</span><span>{{ date.closingTime.hh +':' +  date.closingTime.mm +' ' + date.closingTime.A}}</span>
                                 </div>
                                 <div class="col-2 col-md-1 float-date-remove p-2" @click="removeDate(index)">
-                                    <img src="/icons/trash.svg" class="img-fluid p-2" alt="removedate">
+                                    <img src="icons/trash.svg" class="img-fluid p-2" alt="removedate">
                                 </div>
                             </div>
                         </div>

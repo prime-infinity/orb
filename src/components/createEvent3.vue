@@ -20,7 +20,7 @@
                 
                 <div class="row">
                     <div class="col-12 pt-4 mb-5 text-center" id="organImageDiv" style="background-color:#EBF2F2;">   
-                        <label role="button" style="display:block;" for="fileInputUser"><img src="/icons/edit.svg" class="img-fluid" alt="image"></label>
+                        <label role="button" style="display:block;" for="fileInputUser"><img src="icons/edit.svg" class="img-fluid" alt="image"></label>
                         <input type="file" @change="isChooseProfilePic" ref="inputUser" id="fileInputUser" accept="image/*"/>
 
                         <!--The part that houses the cropping -->

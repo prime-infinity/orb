@@ -216,7 +216,7 @@
 
 <style scoped>
     .navbar-toggler-icon-native{
-       background-image: url("/icons/mendem.svg");
+       background-image: url("https://raw.githubusercontent.com/prime-infinity/mock-home/main/public/icons/mendem.svg");
        display: inline-block;
         width: 1.5em;
         height: 1.5em;
