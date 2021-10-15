@@ -9,7 +9,7 @@
            </div>
        </div>
 
-        <div v-if="isStarted" class="container">  
+        <div v-if="isStarted" class="container pt-5">  
 
             <!--create event counter -->
              <createCounter />

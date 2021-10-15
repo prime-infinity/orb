@@ -4,7 +4,7 @@
     <div>
 
         <!-- multiple date modal -->
-         <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content" style="border-radius:15px;">
                    
@@ -28,7 +28,7 @@
                                 </div>
 
                                 <div class="col-6 mb-4">
-                                    <button :disabled="cannotAddDate" class="btn customInputButton mt-5" @click="addDateAndTimeMul">Add</button>
+                                    <button :disabled="cannotAddDate" class="btn customInputButton mt-5" @click="addDateAndTimeMul" data-dismiss="modal">Add</button>
                                 </div>
 
                                 <div class="col-6 mb-4">
@@ -74,9 +74,9 @@
             </div>
         </div>
 
-        <div class="row pt-3 justify-content-center">
+        <div class="row pt-3 pb-5 justify-content-center">
 
-            <div class="col-12 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6 pb-5">
                 
                 <div v-if="isSingleSelected" class="mb-5 pb-5">
                     
@@ -288,6 +288,7 @@
                 
                 //$('#Modal').modal('hide')
                 console.log(this.mDates[0])
+                //this.date = ''
             },
             selSingle:function(){
                 this.dataSelection = 0

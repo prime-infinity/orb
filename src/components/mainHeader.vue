@@ -87,7 +87,10 @@
                             </router-link>
                         </li>
                         
-                        <button @click="createEvent" class="btn customInputButton bg-dark">Create Event</button>
+                        <div v-if="!isInEventCreation">
+                            <button @click="createEvent" class="btn customInputButton bg-dark">Create Event</button>
+                        </div>
+                        
                         
                     </ul>
                 </div>
@@ -139,7 +142,7 @@
                     </li>
 
                     
-                    <li class="nav-item mt-4 mt-md-0 pt-2">
+                    <li class="nav-item mt-4 mt-md-0 pt-2" v-if="!isInEventCreation">
                         <button @click="createEvent" class="btn text-white pt-2 pb-2 bg-dark pr-5 pl-5">Create events</button>
                     </li>
                     
@@ -186,6 +189,13 @@
             ...mapState({
                 user:'auth',
             }),
+
+            isInEventCreation:function(){
+                if(this.$route.path === "/createevent"){
+                    return true
+                }
+                return false
+            }
         },
         methods:{
             createEvent:function(){
