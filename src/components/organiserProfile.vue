@@ -322,7 +322,7 @@
                 }
             }
             if(this.user === null){
-                //this.$router.push('/')
+                this.$router.push('login')
             }
         }
         

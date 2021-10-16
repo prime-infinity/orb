@@ -23,6 +23,9 @@ export default new Vuex.Store({
     setOrganProfile(state, gotten){
       state.organisersProfile = gotten
     },
+    organCreated(state,gotten){
+      state.organisersProfile.push(gotten)
+    },
   },
   actions: {
     organProfile(context){
