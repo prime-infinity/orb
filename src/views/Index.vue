@@ -14,6 +14,7 @@
     import mainHeader from '../components/mainHeader.vue'
     import createEvent from '../components/createEvent.vue'
     import organiserProfile from '../components/organiserProfile.vue'
+    import home from '../components/home.vue'
 
     export default {
         name: 'index',
@@ -21,11 +22,14 @@
             mainHeader,
             createEvent,
             organiserProfile,
+            home,
         },
         computed:{
 
             component:function(){
-         
+                if(this.$route.path === "/"){
+                    return "home"
+                }
                 if(this.$route.path === "/createevent"){
                     return "createEvent"
                 }
