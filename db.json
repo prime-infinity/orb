@@ -1,6 +1,19 @@
 {
   "register": [
-  
+    {
+      "name": "osamede",
+      "email": "osamede@gmal.com",
+      "password": "aaaa",
+      "password_confirmation": "aaaa",
+      "id": 1
+    },
+    {
+      "name": "richmond",
+      "email": "richmond@gmal.com",
+      "password": "rrrr",
+      "password_confirmation": "rrrr",
+      "id": 2
+    }
   ],
   "posts": [
     {

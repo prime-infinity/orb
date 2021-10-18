@@ -99,14 +99,12 @@
         methods:{
             registerUser:function(){
                 this.registering = true
-
-                /* for test purposes */
-                /*this.$store.commit("registerUser",this.userData)
-                this.$router.push("/")*/
-
+            
                 this.$http.post(this.backendhost+"/register",this.userData)
                 .then(() =>{
-                    //this.$router.push("/")
+
+                    this.$store.commit("registerUser",this.userData)
+                    this.$router.push("/")
                     this.registering = false
                 })
                 .catch((err) => {
