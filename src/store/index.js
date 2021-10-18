@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    backendhost:'http://localhost:5000',
     auth:null,
     createEventCount:0,
     organisersProfile:[],

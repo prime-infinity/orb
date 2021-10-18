@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "sh deploy.sh"
+    "deploy": "sh deploy.sh",
+    "server":"json-server --watch db.json --port 5000"
   },
   "dependencies": {
     "axios": "^0.23.0",
