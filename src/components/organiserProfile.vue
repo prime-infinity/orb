@@ -170,6 +170,7 @@
                 user:'auth',
                 organisersProfile:'organisersProfile',
                 newOrganImage:'newOrganImage',
+                backendhost:'backendhost',
             }),
 
             hasOrganProfile(){
@@ -284,10 +285,24 @@
 
             },
             createOrganProfile:function(){
-                /*axios.post('/web/createOrganProfile')
-                .then((res) =>{
-                    this.$store.commit('organCreated',res.data)
-                })*/
+
+                var organProfileCreatingData = {
+
+                    user_id : this.user.id,
+                    organ_name : this.user.name,
+                    organ_email : this.user.email,
+                    organ_picture : 'profileplaceholder.svg',
+                    organ_desc : null,
+                    organ_num : null,
+                    organ_insta : null,
+                    organ_twitter : null,
+
+                }
+
+                this.$http.post(this.backendhost+"/organProfile",organProfileCreatingData)
+                .then(() =>{
+                    this.$store.commit('organCreated',organProfileCreatingData)
+                })
             },
             saveOrganInfo:function(){
                 this.savingOrganInfo = true
@@ -315,7 +330,7 @@
             if(this.user !== null){
 
                 if(this.organisersProfile.length<1){
-                    this.$store.dispatch("organProfile")
+                    this.$store.dispatch("organProfile",this.user)
                 }
 
                 //already has organiser profile

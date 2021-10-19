@@ -96,9 +96,11 @@
 
                     //test login
                     if(res.data.length > 0){
-                        this.$store.commit("registerUser",this.userData)
+ 
+                        this.$store.commit("registerUser",res.data[0])
                         this.$router.push("/")
                         this.loggin = false
+
                     }else{
                         this.errors.password =  "wrong combination";
 

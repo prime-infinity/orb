@@ -44,15 +44,16 @@ export default new Vuex.Store({
 
   actions: {
 
-    organProfile(context){
+    organProfile(context,elsee){
 
-      axios.get('http://localhost:5000/getOrganProfile')
+      axios.get(`http://localhost:5000/organProfile?email=${elsee.email}`)
       .then((res) =>{
           context.commit('setOrganProfile',res.data)
       })
       .catch((error) => {
           console.log(error)
       });
+
     }
 
   },

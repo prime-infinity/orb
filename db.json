@@ -15,13 +15,19 @@
       "id": 2
     }
   ],
-
-  "getOrganProfile" : [
-    
+  "organProfile": [
+    {
+      "user_id": 1,
+      "organ_name": "osamede",
+      "organ_email": "osamede@gmal.com",
+      "organ_picture": "profileplaceholder.svg",
+      "organ_desc": null,
+      "organ_num": null,
+      "organ_insta": null,
+      "organ_twitter": null,
+      "id": 1
+    }
   ],
-
-
-
   "posts": [
     {
       "id": 1,
