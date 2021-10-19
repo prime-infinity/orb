@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <nav class="navbar fixed-top navbar-expand-lg shadow-sm navbar-light pt-3 pb-3 pl-4 pr-4 bg-white">
+        <nav class="navbar fixed-top navbar-expand-lg shadow-sm navbar-light pt-1 pb-1 pl-4 pr-4 bg-white ">
             <router-link to="/"><a class="navbar-brand" href="">Logo</a></router-link>
 
             <transition enter-active-class="animate__animated animate__bounceIn" leave-active-class="animate__animated animate__bounceOut">
@@ -143,7 +143,7 @@
 
                     
                     <li class="nav-item mt-4 mt-md-0 pt-2" v-if="!isInEventCreation">
-                        <button @click="createEvent" class="btn text-white pt-2 pb-2 bg-dark pr-5 pl-5">Create events</button>
+                        <button @click="createEvent" class="btn text-white pt-2 pb-2 bg-dark pr-3 pl-3">Create events</button>
                     </li>
                     
                 </ul>
@@ -215,6 +215,9 @@
 </script>
 
 <style scoped>
+    .navbar {
+        height:60px;
+    }
     .navbar-toggler-icon-native{
        background-image: url("https://raw.githubusercontent.com/prime-infinity/mock-home/main/public/icons/mendem.svg");
        display: inline-block;
