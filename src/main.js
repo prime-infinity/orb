@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import base from './services/axios'
+Vue.prototype.$http = base;
+
 Vue.config.productionTip = false
 
 new Vue({

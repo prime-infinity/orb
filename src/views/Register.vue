@@ -74,6 +74,7 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex';
     export default {
         name: 'register',
         data(){
@@ -88,27 +89,28 @@
                 registering:false,
             }  
         },      
+        computed:{
+
+            ...mapState({
+                backendhost:'backendhost',
+            }),
+
+        },
         methods:{
             registerUser:function(){
                 this.registering = true
+            
+                this.$http.post(this.backendhost+"/register",this.userData)
+                .then(() =>{
 
-                setTimeout(() => {
-                    this.registering = false
-                }, 1500);
-
-                /* for test purposes */
-                this.$store.commit("registerUser",this.userData)
-                this.$router.push("/")
-
-                /*axios.post('/register',this.userData)
-                .then((res) =>{
+                    this.$store.commit("registerUser",this.userData)
                     this.$router.push("/")
                     this.registering = false
                 })
                 .catch((err) => {
                    this.errors = err.response.data.errors
                    this.registering = false
-                })*/
+                })
             },
         },
     }

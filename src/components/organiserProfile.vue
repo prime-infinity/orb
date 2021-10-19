@@ -1,6 +1,6 @@
 <template>
 
-    <div >
+    <div>
 
         <div v-if="isLoadingOrganProfile" class="d-flex justify-content-center mt-5 pt-5">
             <div class="spinner-border text-danger mt-5" style="width: 6rem; height: 6rem;" role="status">

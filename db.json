@@ -1,0 +1,35 @@
+{
+  "register": [
+    {
+      "name": "osamede",
+      "email": "osamede@gmal.com",
+      "password": "aaaa",
+      "password_confirmation": "aaaa",
+      "id": 1
+    },
+    {
+      "name": "richmond",
+      "email": "richmond@gmal.com",
+      "password": "rrrr",
+      "password_confirmation": "rrrr",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -15,12 +15,11 @@
                     
                         <div class="form-group mb-4">
                             <input v-model="userData.email" type="email" class="form-control customInput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address">
-                            <small v-if="errors.email" class="text-danger">{{ errors.email[0] }}</small>
                         </div>
 
                         <div class="form-group mb-4">
                             <input v-model="userData.password" type="password" class="form-control customInput" placeholder="Enter Password" id="exampleInputPassword1">
-                            <small v-if="errors.password" class="text-danger">{{ errors.password[0] }}</small>
+                            <small v-if="errors.password" class="text-danger">{{ errors.password }}</small>
                         </div>
 
                         <button :disabled="loggin" type="submit" class="btn customInputButton">
@@ -67,6 +66,7 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex';
     export default {
         name: 'Login',
         data(){
@@ -78,28 +78,41 @@
                 errors:{},
                 loggin:false,
             }  
-        },     
+        },    
+           computed:{
+
+            ...mapState({
+                backendhost:'backendhost',
+            }),
+
+        }, 
         methods: {
             loginUser:function(){
+                this.errors.password =  "";
                 this.loggin = true
 
-                setTimeout(() => {
-                    this.loggin = false
-                }, 1500);
-
-                /* for test purposes */
-                this.$store.commit("registerUser",this.userData)
-                this.$router.push("/")
-               
-                /*axios.post('/login',this.userData)
+                this.$http.get(this.backendhost+`/register?email=${this.userData.email}&password=${this.userData.password}`,this.userData)
                 .then((res) =>{
-                    this.$router.push("/")
-                    this.loggin = false
+
+                    //test login
+                    if(res.data.length > 0){
+                        this.$store.commit("registerUser",this.userData)
+                        this.$router.push("/")
+                        this.loggin = false
+                    }else{
+                        this.errors.password =  "wrong combination";
+
+                        setTimeout(() => {
+                            this.loggin = false
+                        }, 1000);
+                        
+                    }
+
                 })
                 .catch((err) => {
                    this.errors = err.response.data.errors
                    this.loggin = false
-                })*/
+                })
             },
         },  
     }
