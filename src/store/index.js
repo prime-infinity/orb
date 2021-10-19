@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -44,15 +45,14 @@ export default new Vuex.Store({
   actions: {
 
     organProfile(context){
-      context.commit('setOrganProfile',[])
 
-      /*axios.get('/web/getOrganProfile')
+      axios.get('http://localhost:5000/getOrganProfile')
       .then((res) =>{
           context.commit('setOrganProfile',res.data)
       })
       .catch((error) => {
-          //console.log(error)
-      });*/
+          console.log(error)
+      });
     }
 
   },

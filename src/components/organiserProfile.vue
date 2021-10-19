@@ -317,6 +317,8 @@
                 if(this.organisersProfile.length<1){
                     this.$store.dispatch("organProfile")
                 }
+
+                //already has organiser profile
                 if(this.organisersProfile.length>0){
                     //not needed againdddds
                 }
