@@ -93,7 +93,7 @@
 
                 this.$http.get(this.backendhost+`/register?email=${this.userData.email}&password=${this.userData.password}`,this.userData)
                 .then((res) =>{
-
+                    console.log(res)
                     //test login
                     if(res.data.length > 0){
  

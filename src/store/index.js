@@ -8,7 +8,8 @@ export default new Vuex.Store({
 
   state: {
 
-    backendhost:'http://localhost:5000',
+    backendhost:'https://my-json-server.typicode.com/prime-infinity/orb',
+    //https://my-json-server.typicode.com/prime-infinity/orb/register
     auth:null,
     createEventCount:0,
     organisersProfile:[],
@@ -46,7 +47,7 @@ export default new Vuex.Store({
 
     organProfile(context,elsee){
 
-      axios.get(`http://localhost:5000/organProfile?email=${elsee.email}`)
+      axios.get(`https://my-json-server.typicode.com/prime-infinity/orb/organProfile?email=${elsee.email}`)
       .then((res) =>{
           context.commit('setOrganProfile',res.data)
       })

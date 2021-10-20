@@ -101,8 +101,8 @@
                 this.registering = true
             
                 this.$http.post(this.backendhost+"/register",this.userData)
-                .then(() =>{
-
+                .then((res) =>{
+                    console.log(res)
                     this.$store.commit("registerUser",this.userData)
                     this.$router.push("/")
                     this.registering = false
