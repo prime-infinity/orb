@@ -31,7 +31,7 @@
                     <div class="form-input mb-5">
                         <div class="col-12 pt-4 mb-5 text-center" id="organImageDiv" style="background-color:#EBF2F2;">
                             
-                            <label role="button" style="display:block;" v-if="organisersProfile[0].organ_picture == 'profileplaceholder.svg'" for="fileInputUser"><img src="/icons/edit.svg" class="img-fluid" alt="image"></label>
+                            <label role="button" style="display:block;" v-if="organisersProfile[0].organ_picture == 'profileplaceholder.svg'" for="fileInputUser"><img src="icons/edit.svg" class="img-fluid" alt="image"></label>
                             <label role="button" style="display:block;" v-if="organisersProfile[0].organ_picture !== 'profileplaceholder.svg'" for="fileInputUser"><img class="img-fluid"  :src="`/storage/userdata/profile/${organisersProfile[0].organ_picture}`" alt="image"></label>
                             <small class="text-primary">Click on your image to Update</small>
                             <input type="file" @change="isChooseProfilePic" ref="inputUser" id="fileInputUser" accept="image/*"/>
