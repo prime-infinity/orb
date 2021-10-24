@@ -40,65 +40,34 @@
             <!-- Row and Cards  -->
             <div class=container>
                 <div class="row">
-                    <!-- Cards -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="my-card shadow-sm p-2">
-                            <div class="row no-gutters">
-                                <div class="col-4 col-md-4 col-lg-12">
-                                    <img src="img/davido.jpg" class="card-img my-img-card">
-                                    <!-- Small Screen Icons -->
-                                    <div class="row no-gutters p-2 d-lg-none" style="margin-top:-54px;">
-                                        <div class="col-6 p-1">
-                                            <button class="btn btn-block btn-danger p-1">
-                                                <i class="las la-share"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-6 p-1">
-                                            <button class="btn btn-block btn-danger p-1">
-                                                <i class="las la-bookmark"></i>
-                                            </button>
-                                        </div>
-                                    </div>
+                  <div class="col-md-3 ">
 
-                                </div>
-                                <div class="col-8 col-md-8 col-lg-12">
-                                    <div class="card-details p-2">
+                    <div class="event-card shadow-sm">
 
-                                        <!-- <span class="card-feature small mt-1">Featured</span> -->
-
-                                        <h5 class="font-weight-bold p-0 m-0 mt-2 card-header-text">Single & Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon..</h5>
-
-                                        <p class="text-muted small m-0 p-0">Davido Music World</p>
-
-                                        <p class="text-muted m-0 mt-1 p-0 font-weight-bold card-location">133 Blekker Street, Lagos.</p>
-
-                                        <p class="m-0 mt-0 p-0 card-time">Sat, 14th June, 12PM WAT</p>
-
-                                    </div>
-
-                                    <div class="row no-gutters d-none d-lg-block">
-                                        <div class="col-6 p-1">
-                                            <button class="btn btn-block btn-danger">
-                                                <i class="las la-share"></i>
-                                                <span class="small">Share</span>
-                                            </button>
-                                        </div>
-                                        <div class="col-6 p-1">
-                                            <button class="btn btn-block btn-danger">
-                                                <i class="las la-bookmark"></i>
-                                                <span class="small">Save</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                           
+                        <div class="d-flex px-2 py-2">
+                            <span class="event-organiser-img"></span>
+                            <span class="px-2">
+                                <h6 class="font-weight-bold p-0 m-0 small">Davido Music Worldwide</h6>
+                                <p class="p-0 m-0 small">1003 followings</p>
+                            </span>
                         </div>
-                        <br>
-                        <br>
+    
+                        <div class="event-card-img ">
+                        
+                        </div>
+                        <!-- <span class="event-date bg-danger px-0">
+                            <span class="m-0 p-0">14</span>
+                            <h6 class="m-0 p-0">Oct</h6>
+                            <span class="m-0 p-0">Sat</span>
+                        </span> -->
+    
+                        <div class="event-details px-2 py-2">
+                            <span class="event-feature"></span>
+                            <h5 class="event-text-header">Single & Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon.</h5>
+                            <p class="event-location">Eastwest, Lagos Nigeria</p>
+                        </div>
                     </div>
-                    
+                  </div>
                 </div>
             </div>
             
@@ -138,51 +107,37 @@
         border-radius: 5px 2px 2px 5px;
         border-left: solid 3px red;
     }
+    .event-card{
+        border-radius: 7px;
+        border: solid 1px;
+    }
+    .event-card-img{
+        height: 120px;
+        background-color: lightsalmon;
+    }
+    .event-text-header{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .event-organiser-img{
+        height: 40px;
+        width: 40px;
+        background-color: lightgray;
+        border-radius: 7px;
+    }
+    .event-date{
+        border: solid 1px;
+
+    }
 
     .bd-callout{padding:1.25rem;margin-top:1.25rem;margin-bottom:1.25rem;border:1px solid #eee;border-left-width:.25rem;border-radius:.25rem}.bd-callout h4{margin-top:0;margin-bottom:.25rem}.bd-callout p:last-child{margin-bottom:0}.bd-callout code{border-radius:.25rem}.bd-callout+.bd-callout{margin-top:-.25rem}.bd-callout-info{border-left-color:#5bc0de}.bd-callout-info h4{color:#5bc0de}.bd-callout-warning{border-left-color:#f0ad4e}.bd-callout-warning h4{color:#f0ad4e}.bd-callout-danger{border-left-color:#d9534f}.bd-callout-danger h4{color:#d9534f}
 
-    .my-card{
-        height: 440px;
-        background-color: white;
-        
-        border: solid 1px #EBF2F2;
-        border-radius: 7px;
-    }
-    .my-card:hover{
-        border: solid 2px #BF4136;
-    }
-    .my-img-card{
-        border-radius: 7px;
-        height:160px;
-        width:100%;
-        object-fit:cover;
-    }
-    .card-header-text{
-        overflow: hidden;
-        /* white-space: nowrap; */
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        font-size: 18px;
-    }
-    .card-feature{
-        padding:0.2em 1em 0.4em 1em;
-        border-radius: 5px;
-        background-color: #bf41362a;
-    }
-    .card-location{
-        color: #BF4136 !important;
-        font-size: 14px;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-    }
-    .card-time{
-        font-size: 14px;
-    }
-
+    
     @media (min-width: 0.98px) and (max-width: 992px) {
         .my-card{
             height: 180px;
