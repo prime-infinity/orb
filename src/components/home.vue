@@ -39,137 +39,45 @@
             
             <!-- Row and Cards  -->
             <div class=container>
+
                 <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
+                
+                    <div v-for="n in parseInt(numberr)" :key="n" class="col-sm-12 col-md-4 col-lg-3 mb-4">
 
-                    <div class="event-card shadow">
-                        <!-- Event Organiser -->
-                        <div class="d-flex px-2 py-3">
-                            <span class="event-organiser-img"></span>
-                            <span class="px-2">
-                                <h6 class="font-weight-bold p-0 m-0 small">Davido Music Worldwide</h6>
-                                <p class="p-0 m-0 small">1003 followings</p>
-                            </span>
-                        </div>
-                        <!-- Event Image -->
-                        <div class="event-card-img ">
-                        
-                        </div>
-                        <!-- Event Date -->
-                        <div class="event-card-date m-0 p-0 shadow-sm ml-2 ">
-                            <span class="date-day pl-2">14</span>
-                            <h6 class="date-month pl-2">Oct</h6>
-                            <span class="date-weekday pl-2 text-muted">Sat</span>
-                        </div>
-                        <!-- Event Details -->
-                        <div class="event-details mt-4 px-2 py-2">
-                            <span class="event-feature small">Featured</span>
-                            <h5 class="event-text-header mt-2">Single and Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon.</h5>
-                            <p class="event-location text-muted mb-3">Eastwest, Lagos Nigeria</p>
+                        <div class="event-card shadow">
+                            <!-- Event Organiser -->
+                            <div class="d-flex px-2 py-3">
+                                <span class="event-organiser-img"></span>
+                                <span class="px-2">
+                                    <h6 class="font-weight-bold p-0 m-0 small">Davido Music Worldwide</h6>
+                                    <p class="p-0 m-0 small">1003 followings</p>
+                                </span>
+                            </div>
+                            <!-- Event Image -->
+                            <div class="event-card-img ">
+                            
+                            </div>
+                            <!-- Event Date -->
+                            <div class="event-card-date m-0 p-0 shadow-sm ml-2 ">
+                                <span class="date-day pl-2">14</span>
+                                <h6 class="date-month pl-2">Oct</h6>
+                                <span class="date-weekday pl-2 text-muted">Sat</span>
+                            </div>
+                            <!-- Event Details -->
+                            <div class="event-details mt-4 px-2 py-2">
+                                <span class="event-feature small">Featured</span>
+                                <h5 class="event-text-header mt-2">Single and Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon.</h5>
+                                <p class="event-location text-muted mb-3">Eastwest, Lagos Nigeria</p>
 
-                            <span class="event-love-icon"><i class="la las love">:)</i></span>
-                        </div>
+                                <span class="event-love-icon"><i class="la las love">:)</i></span>
+                            </div>
 
+                        </div>
+                    
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-
-                    <div class="event-card shadow">
-                        <!-- Event Organiser -->
-                        <div class="d-flex px-2 py-3">
-                            <span class="event-organiser-img"></span>
-                            <span class="px-2">
-                                <h6 class="font-weight-bold p-0 m-0 small">Davido Music Worldwide</h6>
-                                <p class="p-0 m-0 small">1003 followings</p>
-                            </span>
-                        </div>
-                        <!-- Event Image -->
-                        <div class="event-card-img ">
-                        
-                        </div>
-                        <!-- Event Date -->
-                        <div class="event-card-date m-0 p-0 shadow-sm ml-2 ">
-                            <span class="date-day pl-2">14</span>
-                            <h6 class="date-month pl-2">Oct</h6>
-                            <span class="date-weekday pl-2 text-muted">Sat</span>
-                        </div>
-                        <!-- Event Details -->
-                        <div class="event-details mt-4 px-2 py-2">
-                            <span class="event-feature small">Featured</span>
-                            <h5 class="event-text-header mt-2">Single and Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon.</h5>
-                            <p class="event-location text-muted mb-3">Eastwest, Lagos Nigeria</p>
-
-                            <span class="event-love-icon"><i class="la las love">:)</i></span>
-                        </div>
-
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-
-                    <div class="event-card shadow">
-                        <!-- Event Organiser -->
-                        <div class="d-flex px-2 py-3">
-                            <span class="event-organiser-img"></span>
-                            <span class="px-2">
-                                <h6 class="font-weight-bold p-0 m-0 small">Davido Music Worldwide</h6>
-                                <p class="p-0 m-0 small">1003 followings</p>
-                            </span>
-                        </div>
-                        <!-- Event Image -->
-                        <div class="event-card-img ">
-                        
-                        </div>
-                        <!-- Event Date -->
-                        <div class="event-card-date m-0 p-0 shadow-sm ml-2 ">
-                            <span class="date-day pl-2">14</span>
-                            <h6 class="date-month pl-2">Oct</h6>
-                            <span class="date-weekday pl-2 text-muted">Sat</span>
-                        </div>
-                        <!-- Event Details -->
-                        <div class="event-details mt-4 px-2 py-2">
-                            <span class="event-feature small">Featured</span>
-                            <h5 class="event-text-header mt-2">Single and Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon.</h5>
-                            <p class="event-location text-muted mb-3">Eastwest, Lagos Nigeria</p>
-
-                            <span class="event-love-icon"><i class="la las love">:)</i></span>
-                        </div>
-
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-
-                    <div class="event-card shadow">
-                        <!-- Event Organiser -->
-                        <div class="d-flex px-2 py-3">
-                            <span class="event-organiser-img"></span>
-                            <span class="px-2">
-                                <h6 class="font-weight-bold p-0 m-0 small">Davido Music Worldwide</h6>
-                                <p class="p-0 m-0 small">1003 followings</p>
-                            </span>
-                        </div>
-                        <!-- Event Image -->
-                        <div class="event-card-img ">
-                        
-                        </div>
-                        <!-- Event Date -->
-                        <div class="event-card-date m-0 p-0 shadow-sm ml-2 ">
-                            <span class="date-day pl-2">14</span>
-                            <h6 class="date-month pl-2">Oct</h6>
-                            <span class="date-weekday pl-2 text-muted">Sat</span>
-                        </div>
-                        <!-- Event Details -->
-                        <div class="event-details mt-4 px-2 py-2">
-                            <span class="event-feature small">Featured</span>
-                            <h5 class="event-text-header mt-2">Single and Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon.</h5>
-                            <p class="event-location text-muted mb-3">Eastwest, Lagos Nigeria</p>
-
-                            <span class="event-love-icon"><i class="la las love">:)</i></span>
-                        </div>
-
-                    </div>
-                  </div>
 
                 </div>
+
             </div>
             
         </div>
@@ -184,7 +92,7 @@
         name: 'home',
         data(){
             return{
-                
+                numberr:10,
             }  
         },     
         methods: {
