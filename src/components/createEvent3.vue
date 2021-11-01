@@ -59,12 +59,12 @@
                     </li>
 
                     <li class="nav-item mr-2" @click="selImage">
-                        <a class="nav-link dates-button pt-3 pb-3 font-weight-bold" :class="{ dateSelected:isImageSelected }" >Add Image</a>
+                        <a class="nav-link dates-button pt-3 pb-3 font-weight-bold" :class="{ dateSelected:isImageSelected }" >Add Images</a>
                     </li>
 
-                    <li class="nav-item mr-2" @click="selVideo">
+                    <!--<li class="nav-item mr-2" @click="selVideo">
                         <a class="nav-link dates-button pt-3 pb-3 font-weight-bold" :class="{ dateSelected:isVideoSelected }" >Add Video</a>
-                    </li>
+                    </li>-->
 
                 </ul>
 
@@ -81,8 +81,8 @@
                     <div class="row justify-content-center">
                         
                         <div class="col-12">
-                            <label for="organiserName" class="font-weight-bold">Event Blur</label>
-                            <input type="text" class="form-control customInput" id="organiserName">
+                            <label for="organiserName" class="font-weight-bold">Event Description</label>
+                            <input v-model="event.description" type="text" class="form-control customInput" id="organiserName">
                         </div>
 
                     </div>
@@ -106,24 +106,19 @@
 </template>
 
 <script>
-    import VueCropper from 'vue-cropperjs';
-    import 'cropperjs/dist/cropper.css';
-    import Compressor from 'compressorjs';
+
     export default {
         name: 'createEvent3',
         data(){
             return{
-                profileSrc:'',
-                buttonToCropOrCancel:false,
-                isCropping:false,
-                imageErrors:{},
-                userProfileImageType : '',
-                userProfileImageName : '',
                 dataSelection:0,
+                event:{
+                    description:''
+                }
             }  
         },
         components: {
-            VueCropper,
+            
         },
         computed:{
             isTextSelected:function(){
@@ -135,13 +130,6 @@
             },
             isImageSelected:function(){
                 if(this.dataSelection == 1){
-                    return true;
-                }else{
-                    return false
-                }
-            },
-            isVideoSelected:function(){
-                if(this.dataSelection == 2){
                     return true;
                 }else{
                     return false
@@ -162,85 +150,8 @@
             selImage:function(){
                 this.dataSelection = 1
             },
-            selVideo:function(){
-                this.dataSelection = 2
-            },
             getData:function(){
-                console.log('content-type')
-            },
-            hasCropImage:function(){
-                this.isCropping = true
-                //let storex = this.$store;
-                this.cropImgTwo = this.$refs.ucropper.getCroppedCanvas().toBlob((blob) => {
-                    var blobToFile = new File([blob], this.userProfileImageName, {type: this.userProfileImageType, lastModified: Date.now()});
-                    var Data = new FormData();
-
-                    /*var settings = { headers:{
-                        'content-type':'multipart/form-data'}
-                    }*/
-
-                    new Compressor(blobToFile, {
-                        quality: 0.5,
-                        success(result){
-
-                            var type = result.type
-                            var realTypeR = type.split("/");
-                            var name = "image."+realTypeR[1];
-                            var realFile = new File([result], name, {type: type, lastModified: Date.now()});
-
-                            Data.append('file', realFile);
-
-                            async function Uploadpic(){
-                                try {
-
-                                    //const dataFromAsync = await axios.post('/web/changeOrgainProfilePic',Data,settings)
-                                    /*storex.commit("changeOrgainImage",dataFromAsync.data);*/
-                            
-                                } catch (error) {
-                                    //console.log(error.response.data.errors);
-                                    /*storex.commit("changeOrgainImage",error.response.data.errors);*/
-                                }
-                            }
-
-                            Uploadpic()
-
-                        },
-                        error(err) {
-                            console.log(err.message);
-                            alert("There was an error processing your image, This does not happen often,Try checking your image or send us a feedback if it continues");
-                        },
-                            
-                    });
-
-                }, 'image/jpeg' );
-            },
-           hasCanceledCroping:function(){
-                this.buttonToCropOrCancel = false
-            },
-            isChooseProfilePic:function(e){
-                const file = e.target.files[0];
-
-                this.userProfileImageType = file.type;
-                this.userProfileImageName = file.name;
-
-                if (file.type.indexOf('image/') === -1) {
-                    alert('Please select an image file');
-                    return;
-                }
-                if (typeof FileReader === 'function') {
-                    const reader = new FileReader();
-                        reader.onload = (event) => {
-                      
-                        this.profileSrc = event.target.result;
-                        this.$refs.ucropper.replace(event.target.result);
-
-                    };
-                    reader.readAsDataURL(file);
-                    this.buttonToCropOrCancel = true
-                } else {
-                    alert('Sorry, FileReader API not supported');
-                }
-
+                console.log(this.event.description)
             },
         },
         mounted(){

@@ -241,7 +241,7 @@
            saveFieldFromCreateEvent:function(){
                 this.savingFieldFromCreatEvent = true
                 this.errors = {}
-                //var fromReally = this.createMainForm
+                var fromReally = this.createMainForm
 
                 let self = this
                 gottcha()
@@ -250,7 +250,7 @@
                     
                     async function createEventMain(){
                         try {
-
+                            console.log(fromReally)
                             /*const dataFromCreateEvM = await axios.post('/web/createEventMain',{
                                 name:fromReally.name,
                                 tags:fromReally.tags,
