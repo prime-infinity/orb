@@ -4,7 +4,7 @@
         <div class="col-12 col-md-7 pt-4">
 
             <div class="row pt-4">
-                <div class="col-10 col-md-8 col-lg-6 mx-auto">
+                <div class="col-11 col-md-8 col-lg-6 mx-auto">
 
                     <div class="auth-header">
                         <h2 class="font-weight-bold  float-left">Sign In</h2>
