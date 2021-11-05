@@ -1,28 +1,19 @@
 <template>
     <div>
-        <header class="">
-            <div class="">
+        <header class="p-5">
+            <div class="row">
+                <div class="col-3">
+                    <h1 class="display-3 font-weight-bold">
+                        Hello, New User
+                    </h1>
+                </div>
             </div>
         </header>
 
-        <!-- Alert or Notification -->
-        <div class="bd-callout bd-callout-warning">
-            <h5 id="conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies</h5>
-            <p>Using color to add meaning only provides a visual indication, which will<code>.sr-only</code> class.</p>
-        </div>
-        
         <div>
-            <!-- Navbar & Showing -->
-            <div class="">
-                <div class="">
-                    <h3>Showing In </h3>
-                </div>
-
-               
-            </div>
 
             <!-- Nav -->
-            <ul class="nav py-2 sps sps--abv">
+            <!-- <ul class="nav py-2 sps sps--abv">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Active</a>
                 </li>
@@ -35,10 +26,18 @@
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
-            </ul>
+            </ul> -->
             
+            <div class="row" style="height: 100px; margin-top: -100px;">
+                <div class="col-3 event-showing">
+
+                </div>
+                <div class="col-9 event-popular">
+                    
+                </div>
+            </div>
             <!-- Row and Cards  -->
-            <div class=container>
+            <div class="mt-5 container">
 
                 <div class="row">
                 
@@ -81,7 +80,71 @@
             </div>
             
         </div>
-        
+
+        <footer class="bg-dark text-white pt-5" style="margin-left:-15px; margin-right: -15px;">
+
+            <div class="footer-main container">
+                <div class="row">
+
+                    <div class="col-3">
+                        <h3 class="font-weight-bold">orbevents</h3>
+
+                        <p class="small text-light text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est in consequatur id expedita? Facilis facere omnis, nihil velit adipisci inventore fuga corrupti sapiente repudiandae, eius praesentium laudantium ratione beatae rem?</p>
+
+                        <p class="small text-muted">(c) Copyright 2020</p>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <h6 class="font-weight-bold">Using Orb</h6>
+                                
+                                <ul class="list-group">
+                                    <li><a href="">Item One</a></li>
+                                    <li><a href="">Item One</a></li>
+                                    <li><a href="">Item One</a></li>
+                                    <li><a href="">Item One</a></li>
+                                    <li><a href="">Item One</a></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="col-4">
+                                <h6 class="font-weight-bold">Plan Events</h6>
+
+                            </div>
+
+                            <div class="col-4">
+                                <h6 class="font-weight-bold">Find Events</h6>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <h4>Newslettet</h4>
+                        <div class="row no-gutters">
+                            <div class="col-9">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-sub" style="background-color: black;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum sunt minus, corrupti voluptatum modi, alias nisi natus quaerat neque 
+            </div>
+            
+            
+            
+
+
+        </footer>
         
 
     </div>
@@ -92,7 +155,7 @@
         name: 'home',
         data(){
             return{
-                numberr:10,
+                numberr:8,
             }  
         },     
         methods: {
@@ -109,7 +172,12 @@
         background:lightgray;
         margin:64px -15px 0px -15px;
         padding: 0px -15px;
-        height:400px;
+        height:480px;
+    }
+
+    .event-popular{
+        background-color: black;
+        border-top-left-radius: 40px;
     }
 
     .notification{
