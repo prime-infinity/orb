@@ -32,8 +32,11 @@
                 <div class="col-3 event-showing">
 
                 </div>
-                <div class="col-9 event-popular">
-                    
+                <div class="col-9 event-popular py-3 px-5">
+                    <span>
+                        <span> </span>
+                        <span> New </span>
+                    </span>
                 </div>
             </div>
             <!-- Row and Cards  -->
