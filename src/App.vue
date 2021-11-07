@@ -73,7 +73,6 @@
     border:1px solid #BF4136;
     color:black;
   }
-
   #menuFloat{
     background-color: white;
     color:black;
@@ -87,7 +86,6 @@
     top:0%;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
   hr.divider{
     content: 'OR';
     padding: auto;
@@ -97,7 +95,6 @@
     color: #6e6d7a;
     text-align: center;
   }
-
   hr.divider::after{
     content: 'OR';
     display: inline-block;
@@ -106,6 +103,4 @@
     padding: 0 16px;
     background: white;
   }
-
-
 </style>

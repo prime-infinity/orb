@@ -32,11 +32,38 @@
                 <div class="col-3 event-showing">
 
                 </div>
-                <div class="col-9 event-popular py-3 px-5">
-                    <span>
-                        <span> </span>
-                        <span> New </span>
+                <div class="col-md-9 event-popular pt-4 px-5 d-flex text-center">
+                    <span class="text-white text-center px-5">
+                            <i class="las la-coffee text-center" style="font-size: 24px;"></i> 
+                            <p class="text-center"> New </p>
                     </span>
+
+                    <span class="text-white text-center px-5">
+                        <i class="las la-smile text-center" style="font-size: 24px;"></i> 
+                        <p class="text-center"> Free </p>
+                    </span>
+
+                    <span class="text-white text-center px-5">
+                        <i class="las la-music text-center" style="font-size: 24px;"></i> 
+                        <p class="text-center"> Music </p>
+                    </span>
+
+                    <span class="text-white text-center px-5">
+                        <i class="las la-glass-cheers text-center" style="font-size: 24px;"></i> 
+                        <p class="text-center"> Food & Drinks </p>
+                    </span>
+
+                    <span class="text-white text-center px-5">
+                        <i class="las la-hand-holding-heart text-center" style="font-size: 24px;"></i> 
+                        <p class="text-center"> Charity </p>
+                    </span>
+
+                    <span class="text-white text-center px-5">
+                        <i class="las la-tools text-center" style="font-size: 24px;"></i> 
+                        <p class="text-center"> Workshop </p>
+                    </span>
+
+
                 </div>
             </div>
             <!-- Row and Cards  -->
@@ -71,7 +98,7 @@
                                 <h5 class="event-text-header mt-2">Single and Mingle Midnight Party Thor & Dr Jones Sheldon.e & Mingle Midnight Party Thor & Dr Jones Sheldon.</h5>
                                 <p class="event-location text-muted mb-3">Eastwest, Lagos Nigeria</p>
 
-                                <span class="event-love-icon"><i class="la las love">:)</i></span>
+                                <span class="event-love-icon"><i class="la la-bookmark"></i></span>
                             </div>
 
                         </div>
@@ -84,8 +111,7 @@
             
         </div>
 
-        <footer class="bg-dark text-white pt-5" style="margin-left:-15px; margin-right: -15px;">
-
+        <footer class="bg-dark text-white pt-5">
             <div class="footer-main container">
                 <div class="row">
 
@@ -138,15 +164,9 @@
 
                 </div>
             </div>
-
             <div class="footer-sub" style="background-color: black;">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum sunt minus, corrupti voluptatum modi, alias nisi natus quaerat neque 
             </div>
-            
-            
-            
-
-
         </footer>
         
 
