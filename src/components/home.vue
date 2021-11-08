@@ -63,8 +63,8 @@
                         <p class="text-center"> Workshop </p>
                     </span>
 
-
                 </div>
+
             </div>
             <!-- Row and Cards  -->
             <div class="mt-5 container">
@@ -83,9 +83,9 @@
                                 </span>
                             </div>
                             <!-- Event Image -->
-                            <div class="event-card-img ">
+                            <router-link to="event"><div class="event-card-img ">
                             
-                            </div>
+                            </div></router-link>
                             <!-- Event Date -->
                             <div class="event-card-date m-0 p-0 shadow-sm ml-2 ">
                                 <span class="date-day pl-2">14</span>
@@ -111,7 +111,7 @@
             
         </div>
 
-        <footer class="bg-dark text-white pt-5">
+        <footer class="bg-dark d-none text-white pt-5">
             <div class="footer-main container">
                 <div class="row">
 
@@ -182,8 +182,8 @@
             }  
         },     
         methods: {
-           
-        },  
+        
+        } 
     }
 </script>
 
@@ -201,8 +201,9 @@
     .event-popular{
         background-color: black;
         border-top-left-radius: 40px;
+        overflow-x: auto;
     }
-
+    
     .notification{
         border-radius: 5px 2px 2px 5px;
         border-left: solid 3px red;

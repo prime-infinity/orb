@@ -219,7 +219,7 @@
         height:60px;
     }
     .navbar-toggler-icon-native{
-       background-image: url("https://raw.githubusercontent.com/prime-infinity/mock-home/main/public/icons/mendem.svg");
+       background-image: url("https://raw.githubusercontent.com/prime-infinity/orb/main/public/icons/mendem.svg");
        display: inline-block;
         width: 1.5em;
         height: 1.5em;

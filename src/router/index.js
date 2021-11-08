@@ -29,7 +29,13 @@ const routes = [
     path: '/organiserprofile',
     name: 'Index',
     component: Index
+  },
+  {
+    path: '/event',
+    name: 'event',
+    component: () => import('../views/Event.vue')
   }
+  
 ]
 
 const router = new VueRouter({
