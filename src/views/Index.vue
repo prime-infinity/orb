@@ -1,8 +1,6 @@
 <template>
     <div>
-        
         <!--<mainHeader />-->
-
         <keep-alive>
             <component v-bind:is="component" />
         </keep-alive>
