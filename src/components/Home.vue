@@ -7,29 +7,9 @@
         <!-- Header One -->
         <div class="container mt-5">
             <h2>Header One</h2>
-            <div class="row">
+            <div class="row flex-row flex-nowrap pb-3" style="overflow-x: auto;">
 
-                <div class="col-4 p-2">
-                        <div class="index-event-card bg-dark">
-    
-                        </div>
-                        <div class="index-event-card-footer text-white text-center p-3">
-                            <h6 class="font-weight-bold m-0 p-0">This is an event</h6>
-                            <p class="m-0 p-0">Organiser name</p>
-                        </div>
-                </div>
-
-                <div class="col-4 p-2">
-                    <div class="index-event-card bg-dark">
-
-                    </div>
-                    <div class="index-event-card-footer text-white text-center p-3">
-                        <h6 class="font-weight-bold m-0 p-0">This is an event</h6>
-                        <p class="m-0 p-0">Organiser name</p>
-                    </div>
-                </div>
-
-                <div class="col-4 p-2">
+                <div v-for="n in parseInt(numberr)" :key="n" class="col-md-4 col-12 p-2">
                     <div class="index-event-card bg-dark">
 
                     </div>
@@ -45,42 +25,14 @@
         <!-- Header Two -->
         <div class="container mt-5">
             <h2>Header Two</h2>
-            <div class="row">
+            <div class="row flex-row flex-nowrap pb-3" style="overflow-x: auto;">
 
-                <div class="col-2 p-1">
-                    <div class="bg-dark smallest-event">
-
-                    </div>
-                    <div>
-                        <!-- <h5 class="font-weight-bold small"> Wizkid </h5>
-                        <p>Organiser name</p> -->
-                    </div>
-                </div>
-                <div class="col-2 p-1">
+                <div v-for="n in parseInt(numberr)" :key="n" class="col-md-2 col-6 p-1">
                     <div class="bg-dark smallest-event">
 
                     </div>
                 </div>
-                <div class="col-2 p-1">
-                    <div class="bg-dark smallest-event">
 
-                    </div>
-                </div>
-                <div class="col-2 p-1">
-                    <div class="bg-dark smallest-event">
-
-                    </div>
-                </div>
-                <div class="col-2 p-1">
-                    <div class="bg-dark smallest-event">
-
-                    </div>
-                </div>
-                <div class="col-2 p-1">
-                    <div class="bg-dark smallest-event">
-
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -90,46 +42,12 @@
             <h2>Header Three</h2>
             <div class="row">
 
-                <div class="col-3 p-2">
+                <div v-for="n in parseInt(numberr) - 2" :key="n" class="col-md-3 col-12 p-2">
                     <div class="bg-dark small-event">
 
                     </div>
                 </div>
-                <div class="col-3 p-2">
-                    <div class="bg-dark small-event">
-
-                    </div>
-                </div>
-                <div class="col-3 p-2">
-                    <div class="bg-dark small-event">
-
-                    </div>
-                </div>
-                <div class="col-3 p-2">
-                    <div class="bg-dark small-event">
-
-                    </div>
-                </div>
-                <div class="col-3 p-2">
-                    <div class="bg-dark small-event">
-
-                    </div>
-                </div>
-                <div class="col-3 p-2">
-                    <div class="bg-dark small-event">
-
-                    </div>
-                </div>
-                <div class="col-3 p-2">
-                    <div class="bg-dark small-event">
-
-                    </div>
-                </div>
-                <div class="col-3 p-2">
-                    <div class="bg-dark small-event">
-
-                    </div>
-                </div>
+                
             </div>
             <hr>
         </div>
@@ -137,9 +55,9 @@
         <!-- Header Four -->
         <div class="container mt-5">
             <h2>Header Four</h2>
-            <div class="row">
+            <div class="row flex-row flex-nowrap pb-3" style="overflow-x: auto;">
 
-                <div class="col-4 p-2">
+                <div v-for="n in parseInt(numberr) - 6 " :key="n" class="col-md-4 col-12 p-2">
                         <div class="index-event-card bg-dark">
     
                         </div>
@@ -147,26 +65,6 @@
                             <h6 class="font-weight-bold m-0 p-0">This is an event</h6>
                             <p class="m-0 p-0">Organiser name</p>
                         </div>
-                </div>
-
-                <div class="col-4 p-2">
-                    <div class="index-event-card bg-dark">
-
-                    </div>
-                    <div class="index-event-card-footer text-white text-center p-3">
-                        <h6 class="font-weight-bold m-0 p-0">This is an event</h6>
-                        <p class="m-0 p-0">Organiser name</p>
-                    </div>
-                </div>
-
-                <div class="col-4 p-2">
-                    <div class="index-event-card bg-dark">
-
-                    </div>
-                    <div class="index-event-card-footer text-white text-center p-3">
-                        <h6 class="font-weight-bold m-0 p-0">This is an event</h6>
-                        <p class="m-0 p-0">Organiser name</p>
-                    </div>
                 </div>
 
             </div>
@@ -182,7 +80,7 @@
         name: 'Home',
         data(){
             return{
-   
+                numberr:10,
             }  
         },    
         computed:{
