@@ -36,6 +36,26 @@ const routes = [
     component: () => import('../views/Event.vue')
   },
   {
+    path: '/eventview',
+    name: 'eventview',
+    component: () => import('../views/EventView.vue')
+  },
+  {
+    path: '/eventsearch',
+    name: 'eventsearch',
+    component: () => import('../views/EventSearch.vue')
+  },
+  {
+    path: '/payoutmethod',
+    name: 'payoutmethod',
+    component: () => import('../views/PayoutMethod.vue')
+  },
+  {
+    path: '/payoutactivities',
+    name: 'payoutactivities',
+    component: () => import('../views/PayoutActivities.vue')
+  },
+  {
     path: '/payout',
     name: 'payout',
     component: () => import('../views/Payout.vue')
