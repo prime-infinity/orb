@@ -32,9 +32,11 @@
                 <span class="nav-list">Charity & Fundraiser</span>
                 <span class="nav-list">Politics</span>
             </div>
+
             <!-- Events -->
             <div class="row mt-5">
-                <div class="col-md-3">
+
+                <div class="col-md-3 mb-4">
                     <div class="card">
                         <div class="organiser-info p-2">
                             <div class="d-flex">
@@ -70,18 +72,17 @@
                                 </span>
                             </span>
 
-                            <div class="event-text">
-                                <h5>Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
                             </div>
 
 
-                            <p><span class="yellow-color">Eastwood </span><span></span>Lagos Nigeria</p>
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex">
-                                <!-- <span class="mr-auto">Art & Culture</span> -->
+                            <span class="d-flex mb-2">
                                 <span class="mr-auto">
-                                    <button class="btn btn-warning"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
                                 </span>
                                 
                                 <span class="ml-auto">
@@ -92,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="card">
                         <div class="organiser-info p-2">
                             <div class="d-flex">
@@ -128,18 +129,17 @@
                                 </span>
                             </span>
 
-                            <div class="event-text">
-                                <h5>Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
                             </div>
 
 
-                            <p><span class="yellow-color">Eastwood </span><span></span>Lagos Nigeria</p>
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex">
-                                <!-- <span class="mr-auto">Art & Culture</span> -->
+                            <span class="d-flex mb-2">
                                 <span class="mr-auto">
-                                    <button class="btn btn-warning"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
                                 </span>
                                 
                                 <span class="ml-auto">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="card">
                         <div class="organiser-info p-2">
                             <div class="d-flex">
@@ -186,18 +186,17 @@
                                 </span>
                             </span>
 
-                            <div class="event-text">
-                                <h5>Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
                             </div>
 
 
-                            <p><span class="yellow-color">Eastwood </span><span></span>Lagos Nigeria</p>
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex">
-                                <!-- <span class="mr-auto">Art & Culture</span> -->
+                            <span class="d-flex mb-2">
                                 <span class="mr-auto">
-                                    <button class="btn btn-warning"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
                                 </span>
                                 
                                 <span class="ml-auto">
@@ -208,7 +207,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="card">
                         <div class="organiser-info p-2">
                             <div class="d-flex">
@@ -244,18 +243,17 @@
                                 </span>
                             </span>
 
-                            <div class="event-text">
-                                <h5>Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
                             </div>
 
 
-                            <p><span class="yellow-color">Eastwood </span><span></span>Lagos Nigeria</p>
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex">
-                                <!-- <span class="mr-auto">Art & Culture</span> -->
+                            <span class="d-flex mb-2">
                                 <span class="mr-auto">
-                                    <button class="btn btn-warning"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
                                 </span>
                                 
                                 <span class="ml-auto">
@@ -269,7 +267,277 @@
                 
             </div>
            
+
         </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-2 col-6 p-1">
+                    <div class="smallest-event">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 p-1">
+                    <div class="smallest-event">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 p-1">
+                    <div class="smallest-event">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 p-1">
+                    <div class="smallest-event">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 p-1">
+                    <div class="smallest-event">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 p-1">
+                    <div class="smallest-event">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="container mt-5">
+            <!-- Events -->
+            <div class="row mt-5">
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="organiser-info p-2">
+                            <div class="d-flex">
+                                <span>
+                                    <img src="" alt="" class="organiser-img">
+                                </span>
+                                <span>
+                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <p class="small m-0">2020 Followers</p>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="event-image">
+                            <img src="" alt="">
+                        </div>
+                        
+                        <div class="event-info container">
+
+                            <div class="event-date shadow-sm pl-2 pt-1">
+                                <p class="p-0">24</p>
+                                <h5 class="p-0 font-weight-bold yellow-color" style="margin-top:-24px;">Oct</h5>
+                                <p class="p-0 font-weight-bold text-muted" style="margin-top:-16px;">Sat</p>
+                            </div>
+
+                            <span class="d-flex mt-2">
+                                <span class="mr-auto"> 
+                                    <p class="event-tag">Art & Culture</p>
+                                </span>
+
+                                <span class="ml-auto">
+                                    <p class="font-weight-bold event-price small">Free</p>
+                                </span>
+                            </span>
+
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            </div>
+
+
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
+
+
+                            <span class="d-flex mb-2">
+                                <span class="mr-auto">
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                </span>
+                                
+                                <span class="ml-auto">
+                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="organiser-info p-2">
+                            <div class="d-flex">
+                                <span>
+                                    <img src="" alt="" class="organiser-img">
+                                </span>
+                                <span>
+                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <p class="small m-0">2020 Followers</p>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="event-image">
+                            <img src="" alt="">
+                        </div>
+                        
+                        <div class="event-info container">
+
+                            <div class="event-date shadow-sm pl-2 pt-1">
+                                <p class="p-0">24</p>
+                                <h5 class="p-0 font-weight-bold yellow-color" style="margin-top:-24px;">Oct</h5>
+                                <p class="p-0 font-weight-bold text-muted" style="margin-top:-16px;">Sat</p>
+                            </div>
+
+                            <span class="d-flex mt-2">
+                                <span class="mr-auto"> 
+                                    <p class="event-tag">Art & Culture</p>
+                                </span>
+
+                                <span class="ml-auto">
+                                    <p class="font-weight-bold event-price small">Free</p>
+                                </span>
+                            </span>
+
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            </div>
+
+
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
+
+
+                            <span class="d-flex mb-2">
+                                <span class="mr-auto">
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                </span>
+                                
+                                <span class="ml-auto">
+                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="organiser-info p-2">
+                            <div class="d-flex">
+                                <span>
+                                    <img src="" alt="" class="organiser-img">
+                                </span>
+                                <span>
+                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <p class="small m-0">2020 Followers</p>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="event-image">
+                            <img src="" alt="">
+                        </div>
+                        
+                        <div class="event-info container">
+
+                            <div class="event-date shadow-sm pl-2 pt-1">
+                                <p class="p-0">24</p>
+                                <h5 class="p-0 font-weight-bold yellow-color" style="margin-top:-24px;">Oct</h5>
+                                <p class="p-0 font-weight-bold text-muted" style="margin-top:-16px;">Sat</p>
+                            </div>
+
+                            <span class="d-flex mt-2">
+                                <span class="mr-auto"> 
+                                    <p class="event-tag">Art & Culture</p>
+                                </span>
+
+                                <span class="ml-auto">
+                                    <p class="font-weight-bold event-price small">Free</p>
+                                </span>
+                            </span>
+
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            </div>
+
+
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
+
+
+                            <span class="d-flex mb-2">
+                                <span class="mr-auto">
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                </span>
+                                
+                                <span class="ml-auto">
+                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="organiser-info p-2">
+                            <div class="d-flex">
+                                <span>
+                                    <img src="" alt="" class="organiser-img">
+                                </span>
+                                <span>
+                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <p class="small m-0">2020 Followers</p>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="event-image">
+                            <img src="" alt="">
+                        </div>
+                        
+                        <div class="event-info container">
+
+                            <div class="event-date shadow-sm pl-2 pt-1">
+                                <p class="p-0">24</p>
+                                <h5 class="p-0 font-weight-bold yellow-color" style="margin-top:-24px;">Oct</h5>
+                                <p class="p-0 font-weight-bold text-muted" style="margin-top:-16px;">Sat</p>
+                            </div>
+
+                            <span class="d-flex mt-2">
+                                <span class="mr-auto"> 
+                                    <p class="event-tag">Art & Culture</p>
+                                </span>
+
+                                <span class="ml-auto">
+                                    <p class="font-weight-bold event-price small">Free</p>
+                                </span>
+                            </span>
+
+                            <div class="event-text m-0">
+                                <h5 class="m-0">Single and Mingle Life Party Thor and Dr Sheldon</h5>
+                            </div>
+
+
+                            <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
+
+
+                            <span class="d-flex mb-2">
+                                <span class="mr-auto">
+                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                </span>
+                                
+                                <span class="ml-auto">
+                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+           
+
+        </div>
+
+        
         
         
     </div>
@@ -277,10 +545,11 @@
 
 <script>
     export default {
+        
         name: 'EventSearch',
         data(){
             return{
-   
+                numberr:10,
             }  
         },    
         computed:{
@@ -360,5 +629,21 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+
+    
+    .card{
+        border:none;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+    .card:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+    /*  */
+    .smallest-event{
+        height: 200px;
+        border-radius: 12px;
+        background-color: lightgray;
     }
 </style>

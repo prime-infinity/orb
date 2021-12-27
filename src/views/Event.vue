@@ -112,6 +112,9 @@
             </div>
             
         </div>
+
+      
+
     </div>
 </template>
 
@@ -154,4 +157,5 @@ body{
 .date-text{
     color:#FCA311;
 }
+
 </style>
