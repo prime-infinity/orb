@@ -10,9 +10,9 @@
                                 <input type="text" class="form-control ">
                             </div>
                             <div class="col-3">
-                                <button class="search-button btn btn-block btn-warning d-none d-md-block"> Search Events </button>
+                                <button class="search-button btn btn-block btn-yellow d-none d-md-block"> Search Events </button>
 
-                                <button class="search-button btn btn-block btn-warning d-block d-md-none"> <i class="la las-search"></i></button>
+                                <button class="search-button btn btn-block btn-yellow d-block d-md-none"> <i class="la las-search"></i></button>
                             </div>
                         </div>
 
@@ -86,7 +86,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -143,7 +143,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -200,7 +200,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -257,7 +257,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -353,7 +353,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -410,7 +410,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -467,7 +467,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -524,7 +524,7 @@
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-warning"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -564,6 +564,9 @@
 <style scoped>
     .yellow-color{
         color:#FCA311;
+    }
+    .btn-yellow{
+        background-color: #FCA311 !important;
     }
     .organiser-img{
         width: 32px;
@@ -614,7 +617,7 @@
         padding:2px 4px;
         border-radius: 4px;
         font-size: 12px;
-        background-color: lightgray;
+        background-color: #FEE3B8;
     }
     .event-price{
         font-style: italic;
