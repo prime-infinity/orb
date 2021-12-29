@@ -46,6 +46,11 @@ const routes = [
     component: () => import('../views/EventSearch.vue')
   },
   {
+    path: '/eventadmin',
+    name: 'eventadmin',
+    component: () => import('../views/EventAdmin.vue')
+  },
+  {
     path: '/payoutmethod',
     name: 'payoutmethod',
     component: () => import('../views/PayoutMethod.vue')
