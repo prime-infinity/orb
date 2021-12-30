@@ -104,4 +104,11 @@
     padding: 0 16px;
     background: white;
   }
+  .no-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scroll-bar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 </style>

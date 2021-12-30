@@ -121,13 +121,7 @@
         height: 300px;
         border-radius: 12px;
     }
-    .no-scroll-bar::-webkit-scrollbar {
-        display: none;
-    }
-    .no-scroll-bar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
+
 /**
 any styles you use here are only going to be used by this view
 */
