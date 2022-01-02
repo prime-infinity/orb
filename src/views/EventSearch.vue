@@ -24,13 +24,26 @@
 
         <div class="container mt-5">
             <!-- Nav List -->
-            <div>
-                <span class="nav-list active">All</span>
-                <span class="nav-list">New</span>
-                <span class="nav-list">Art & Culture</span>
-                <span class="nav-list">Entertainment</span>
-                <span class="nav-list">Charity & Fundraiser</span>
-                <span class="nav-list">Politics</span>
+            <div class="row flex-row flex-nowrap no-scroll-bar" style="overflow-x: auto;">
+                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                    <span>All</span>
+                </div>
+                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                    <span>New</span>
+                </div>
+                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                    <span>Art & Culture</span>
+                </div>
+                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                    <span>Entertainment</span>
+                </div>
+                <div class="col-6 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                    <span>Charity & Fundraiser</span>
+                </div>
+                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                    <span>Politics</span>
+                </div>
+
             </div>
 
             <!-- Events -->

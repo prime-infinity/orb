@@ -7,9 +7,9 @@
         <!-- Header One -->
         <div class="container mt-5">
             <h2>Header One</h2>
-            <div class="row flex-row flex-nowrap pb-3" style="overflow-x: auto;">
+            <div class="row flex-row flex-nowrap pb-3 no-scroll-bar" style="overflow-x: auto;">
 
-                <div v-for="n in parseInt(numberr)" :key="n" class="col-md-4 col-12 p-2">
+                <div v-for="n in parseInt(numberr)" :key="n" class="col-md-5 col-11 p-2">
                     <div class="index-event-card bg-dark">
 
                     </div>
@@ -25,9 +25,9 @@
         <!-- Header Two -->
         <div class="container mt-5">
             <h2>Header Two</h2>
-            <div class="row flex-row flex-nowrap pb-3" style="overflow-x: auto;">
+            <div class="row flex-row flex-nowrap pb-3 no-scroll-bar" style="overflow-x: auto;">
 
-                <div v-for="n in parseInt(numberr)" :key="n" class="col-md-2 col-6 p-1">
+                <div v-for="n in parseInt(numberr)" :key="n" class="col-md-3 mr-4 col-7 p-1">
                     <div class="bg-dark smallest-event">
 
                     </div>
@@ -55,9 +55,9 @@
         <!-- Header Four -->
         <div class="container mt-5">
             <h2>Header Four</h2>
-            <div class="row flex-row flex-nowrap pb-3" style="overflow-x: auto;">
+            <div class="row flex-row flex-nowrap pb-3 no-scroll-bar" style="overflow-x: auto;">
 
-                <div v-for="n in parseInt(numberr) - 6 " :key="n" class="col-md-4 col-12 p-2">
+                <div v-for="n in parseInt(numberr) - 6 " :key="n" class="col-md-5 col-11 p-2">
                         <div class="index-event-card bg-dark">
     
                         </div>
@@ -121,6 +121,7 @@
         height: 300px;
         border-radius: 12px;
     }
+
 /**
 any styles you use here are only going to be used by this view
 */
