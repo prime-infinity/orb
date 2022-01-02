@@ -74,57 +74,18 @@
                         Learning about your startup is the first step to start a new business and this course is here to help you get started in a profitable way.
                     </p>
 
+                    <p class="font-weight-bold">What you will learn</p>
 
-What you will learn
-
-The Perfect Business Idea
-
-Product Development
-
-Market Research
-
-Business Management
-
-Thinking Outside The Box
-
-Marketing & Sales Essentials
-
-Effective Business Planning
-
-Business Structuring
-
-Fund Raising
-
-Getting Started
-
-Who should attend
-
-Anyone who wants to avoid the risk of making costly mistakes that could squander your entire capital.
-
-Anyone who wants to understand and implement the strategies that will help you achieve your business goals fast.
-
-What you will get
-
-Certification
-
-Training Materials
-
-Worksheets
-
-Refreshments
-
-Date: Sat. Jan. 29th 2022
-
-Time: 10 am – 4 pm
-
-Venue: 4th Floor, Polystar Building by Maruwa B/Stop, 2nd Roundabout, Lekki Phase 1, Lagos.
-
-COURSE FEE: N80,000
-
-Register HERE
-
-Inquiries: Call or WhatsApp: 0913 117 2933 Mobile: 09152371278
-
+                    <ul>
+                        <li> Product Development </li>
+                        <li> Market Research </li>
+                        <li> Business Management </li>
+                        <li> Thinking Outside The Box </li>
+                        <li> Marketing & Sales Essentials </li>
+                        <li> Effective Business Planning </li>
+                        <li> Business Structuring </li>
+                        <li> Fund Raising </li>
+                    </ul>
 
                 </div>
 
@@ -152,13 +113,142 @@ Inquiries: Call or WhatsApp: 0913 117 2933 Mobile: 09152371278
                     </div>
 
                 </div>
+
+                <!-- Organiser -->
+                <div class="col-md-12 mb-5">
+                    <hr>
+                    <div class="p-2 text-center mb-4">
+                        <img width="" height="" alt="" src="">
+
+                        <p class="font-weight-bold"></p>
+
+                        <p class="text-muted">
+                        EducationUSA is a U.S. Department of State network of over 425 international student advising centers in 178 countries. The network promotes U.S. higher education to students around the world by offering accurate, comprehensive, and current information about opportunities to study at accredited postsecondary institutions in the United States. EducationUSA also provides services to the U.S. higher education community to help institutional leaders meet their recruitment and campus internationalization goals. EducationUSA is your official source on U.S. higher education. 
+                        </p>
+                        
+                    </div>
+
+                    
+                </div>
+
+
             </div>
         </div>
 
         <div class="shadow-lg footer fixed-bottom mt-5">
+            <div class="container">
+                <div class="row p-2">
+                    <div class="col-md-8 d-flex ">
+                        <div class="mr-auto d-none d-md-block">
+                            <button class="btn btn-light mr-3">S</button>
+                            <button class="btn btn-light">Save</button>
+                        </div>
 
+                        <div class="ml-auto d-none d-md-block">
+                            <p class="font-weight-bold pt-3">Sold out</p>
+                        </div>
+                        
+
+                        
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn main-color btn-block" data-toggle="modal" data-target="#exampleModal">Continue</button>
+
+                        <!-- Modal -->
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> -->
+                        <!-- Launch demo modal -->
+                        <!-- </button> -->
+                       
+
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <!-- <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div> -->
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <button type="button" class="close mb-4" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h3 class="text-center mt-4 mb-3">Title of the Event</h3>
+                            <img src="" alt="" style="height:200px; width:100%; object-fit:cover;" class="bg-light">
+
+                            <div class="d-flex mt-5">
+                                <span class="mr-auto">
+                                    <h5 class="m-0">Name of Ticket</h5>
+                                    <p class="m-0">$80.00</p>
+                                    <p class="text-muted"> Ending on Tuesday, May 12th</p>
+                                </span>
+                                <span class="ml-auto">
+                                    <select class="custom-select" id="validationDefault04" required>
+                                        <option selected  value="">1</option>
+                                        <option>2</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <hr class="m-0">
+                            <div class="d-flex mt-3">
+                                <span class="mr-auto">
+                                    <h5 class="m-0">Name of Ticket</h5>
+                                    <p class="m-0">$80.00</p>
+                                    <p class="text-muted"> Ending on Tuesday, May 12th</p>
+                                </span>
+                                <span class="ml-auto">
+                                    <select class="custom-select" id="validationDefault04" required>
+                                        <option selected  value="">1</option>
+                                        <option>2</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <hr class="m-0">
+                            <div class="d-flex mt-3">
+                                <span class="mr-auto">
+                                    <h5 class="m-0">Name of Ticket</h5>
+                                    <p class="m-0">$80.00</p>
+                                    <p class="text-muted"> Ending on Tuesday, May 12th</p>
+                                </span>
+                                <span class="ml-auto">
+                                    <select class="custom-select" id="validationDefault04" required>
+                                        <option selected  value="">1</option>
+                                        <option>2</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+               
+            </div>
+            <div class="modal-footer shadow">
+                <span class="mr-auto">
+                    <h6 class="font-weight-bold m-0">Total</h6>
+                    <p class="m-0">$40,000</p>
+                </span>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-warning main-color">Checkout</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- End of Modal -->
     </div>
+
+    
 </template>
 
 <script>
@@ -218,7 +308,35 @@ Inquiries: Call or WhatsApp: 0913 117 2933 Mobile: 09152371278
         font-size: 12px;
         background-color: #FEE3B8;
     }
+    .btn,.custom-select{
+        height:56px;
+    }
+    .btn:focus,.btn:active,.btn:hover,.custom-select:focus,.custom-select:active,.custom-select:hover{
+        outline: none;
+        box-shadow:none;
+    }
+    .main-color{
+        background-color:#FCA311;
+    }
+    .main-outline{
+        border: solid 1px #FCA311;
+    }
 
-    
+    .modal-dialog {
+        width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+}
+
+.modal-body {
+  overflow-y: auto; }
 
 </style>
