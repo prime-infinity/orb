@@ -1,5 +1,34 @@
 <template>
     <div>
+           <!-- Modal -->
+        <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <!-- <button type="button" class="close mb-4" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button> -->
+                            <!-- <h3 class="text-center mt-4 mb-3">Title of the Event</h3> -->
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+               
+            </div>
+            <div class="modal-footer shadow">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning main-color">Apply</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- End of Modal -->
+
         <header class="header p-3">
             <div class="container">
                 <div class="row justify-content-center py-4">
@@ -7,12 +36,18 @@
 
                         <div class="row">
                             <div class="col-9">
-                                <input type="text" class="form-control ">
+                                <!-- <input type="text" class="form-control "> -->
+                                <label class="sr-only" for="">Search</label>
+                                <div class="input-group mb-2 mr-sm-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="las la-search"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control"  placeholder="Search">
+                                </div>
                             </div>
                             <div class="col-3">
-                                <button class="search-button btn btn-block btn-yellow d-none d-md-block"> Search Events </button>
-
-                                <button class="search-button btn btn-block btn-yellow d-block d-md-none"> <i class="la las-search"></i></button>
+                                <button class="search-button btn btn-block btn-yellow d-none d-md-block" data-toggle="modal" data-target="#exampleModal">Advanced Search</button>
+                                <button class="search-button btn btn-block btn-yellow d-block d-md-none" data-toggle="modal" data-target="#exampleModal"> <i class="la las-search"></i></button>
                             </div>
                         </div>
 
@@ -596,6 +631,7 @@
     }
     input,.search-button{
         height: 56px;
+        margin:0px !important;
     }
     .nav-list{
         padding: 8px 16px;
@@ -607,6 +643,22 @@
         background-color: #FCA311;
     }
 
+  .modal-dialog {
+        width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    }
+
+    .modal-body {
+    overflow-y: auto; }
     /* Event */
     .event-image{
         height: 160px;
@@ -661,5 +713,19 @@
         height: 200px;
         border-radius: 12px;
         background-color: lightgray;
+    }
+
+    /*  */
+    .input-group-text{
+        background: white;
+        font-size: 1.4em;
+        border:none;
+    }
+    .form-control{
+        border: none;
+    }
+    .form-control:active,.form-control:focus,.form-control:hover{
+        outline: none;
+        box-shadow: none;
     }
 </style>
