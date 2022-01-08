@@ -2,7 +2,7 @@
     <div>
       <div class="container d-flex mt-5">
             <div class="mr-auto">
-                <h3 class="m-0 font-weight-bold">Manage Event</h3>
+                <h4 class="m-0 font-weight-bold">Manage Event</h4>
                 <p class="m-0">Table showing all payout activities.</p>
             </div>
 
