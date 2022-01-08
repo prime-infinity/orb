@@ -176,72 +176,72 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div> -->
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <button type="button" class="close mb-4" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h3 class="text-center mt-4 mb-3">Title of the Event</h3>
-                            <img src="" alt="" style="height:200px; width:100%; object-fit:cover;" class="bg-light">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <button type="button" class="close mb-4" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h3 class="text-center mt-4 mb-3">Title of the Event</h3>
+                                <img src="" alt="" style="height:200px; width:100%; object-fit:cover;" class="bg-light">
 
-                            <div class="d-flex mt-5">
-                                <span class="mr-auto">
-                                    <h5 class="m-0">Name of Ticket</h5>
-                                    <p class="m-0">$80.00</p>
-                                    <p class="text-muted"> Ending on Tuesday, May 12th</p>
-                                </span>
-                                <span class="ml-auto">
-                                    <select class="custom-select" id="validationDefault04" required>
-                                        <option selected  value="">1</option>
-                                        <option>2</option>
-                                    </select>
-                                </span>
-                            </div>
-                            <hr class="m-0">
-                            <div class="d-flex mt-3">
-                                <span class="mr-auto">
-                                    <h5 class="m-0">Name of Ticket</h5>
-                                    <p class="m-0">$80.00</p>
-                                    <p class="text-muted"> Ending on Tuesday, May 12th</p>
-                                </span>
-                                <span class="ml-auto">
-                                    <select class="custom-select" id="validationDefault04" required>
-                                        <option selected  value="">1</option>
-                                        <option>2</option>
-                                    </select>
-                                </span>
-                            </div>
-                            <hr class="m-0">
-                            <div class="d-flex mt-3">
-                                <span class="mr-auto">
-                                    <h5 class="m-0">Name of Ticket</h5>
-                                    <p class="m-0">$80.00</p>
-                                    <p class="text-muted"> Ending on Tuesday, May 12th</p>
-                                </span>
-                                <span class="ml-auto">
-                                    <select class="custom-select" id="validationDefault04" required>
-                                        <option selected  value="">1</option>
-                                        <option>2</option>
-                                    </select>
-                                </span>
-                            </div>
+                                <div class="d-flex mt-5">
+                                    <span class="mr-auto">
+                                        <h5 class="m-0">Name of Ticket</h5>
+                                        <p class="m-0">$80.00</p>
+                                        <p class="text-muted"> Ending on Tuesday, May 12th</p>
+                                    </span>
+                                    <span class="ml-auto">
+                                        <select class="custom-select" id="validationDefault04" required>
+                                            <option selected  value="">1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <hr class="m-0">
+                                <div class="d-flex mt-3">
+                                    <span class="mr-auto">
+                                        <h5 class="m-0">Name of Ticket</h5>
+                                        <p class="m-0">$80.00</p>
+                                        <p class="text-muted"> Ending on Tuesday, May 12th</p>
+                                    </span>
+                                    <span class="ml-auto">
+                                        <select class="custom-select" id="validationDefault04" required>
+                                            <option selected  value="">1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <hr class="m-0">
+                                <div class="d-flex mt-3">
+                                    <span class="mr-auto">
+                                        <h5 class="m-0">Name of Ticket</h5>
+                                        <p class="m-0">$80.00</p>
+                                        <p class="text-muted"> Ending on Tuesday, May 12th</p>
+                                    </span>
+                                    <span class="ml-auto">
+                                        <select class="custom-select" id="validationDefault04" required>
+                                            <option selected  value="">1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </span>
+                                </div>
 
+                            </div>
                         </div>
+                        
                     </div>
-                    
+                
                 </div>
-               
-            </div>
-            <div class="modal-footer shadow">
-                <span class="mr-auto">
-                    <h6 class="font-weight-bold m-0">Total</h6>
-                    <p class="m-0">$40,000</p>
-                </span>
-                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                <button type="button" class="btn btn-warning main-color">Checkout</button>
-            </div>
+                <div class="modal-footer shadow">
+                    <span class="mr-auto">
+                        <h6 class="font-weight-bold m-0">Total</h6>
+                        <p class="m-0">$40,000</p>
+                    </span>
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-warning main-color">Checkout</button>
+                </div>
             </div>
         </div>
         </div>

@@ -49,12 +49,12 @@
                 
                 <!-- date icon for large view -->
                 <div class="d-none d-md-block large-icon-layout">
-                    <i class="las la-info"></i>
+                    <i class="la-calendar-plus"></i>
                 </div>
 
                 <!--date icon for mobile view-->
                 <div class="d-md-none text-left small-icon-layout">
-                    <i class="las la-info"></i>
+                    <i class="la-calendar-plus"></i>
                 </div>
 
                 <h2 class="mt-2" id="redHeadings">Date & Time</h2>

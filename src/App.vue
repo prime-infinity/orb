@@ -28,11 +28,11 @@
     margin-bottom: 84px;
   }
   #redHeadings{
-    color:#BF4136;
+    color:#000000;
   }
   #redleft{
     height: 1043px;
-    background: #BF4136;
+    background: #000000;
   }
   .dates-button{
     background: #EBF2F2;
@@ -40,9 +40,9 @@
     color:black;
   }
   .dateSelected{
-    background-color:#ecada8; ;
-    color:red;
-    border:1px solid red;
+    background-color:#FEE3B8; ;
+    color:#FCA311;
+    border:1px solid #FCA311;
   }
   .customInput{
     background: #EBF2F2;
@@ -52,28 +52,29 @@
   .customInput:focus,
   .customInput:hover{
     transition:.5s ease;
-    border:1px solid #BF4136;
+    border:1px solid #FCA311;
     background-color: white;
     box-shadow: inset 0 0  0.1rem 0 #262421;
   }
   .customInputButton{
     width:100%;
     height:56px;
-    background: #BF4136;
-    color:white;
+    background: #000000;
+    color:white !important;
   }
   .customInputButton:focus,
   .customInputButton:hover{
     transition: .5s ease;
-    border:1px solid #BF4136;
+    border:1px solid #000000;
     background-color: white;
     box-shadow: 0 0 0 0;
   }
   .customInputButtonTwo{
     background-color: white;
-    border:1px solid #BF4136;
-    color:black;
+    border:2px solid #000000;
+    color:black !important;
   }
+
   #menuFloat{
     background-color: white;
     color:black;

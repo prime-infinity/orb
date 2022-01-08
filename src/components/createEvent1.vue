@@ -182,13 +182,25 @@
 
         </div>
 
-        <div class=" form-button row justify-content-center border-top fixed-bottom bg-white shadow-sm">
-            <div class="col-10 col-lg-6 col-md-8 col-sm-8 mt-1 mb-1">
-                <button :disabled="savingFieldFromCreatEvent" type="submit" class="btn customInputButton">
-                    <div @click="saveFieldFromCreateEvent" v-show="!savingFieldFromCreatEvent">Save and continue</div>
-                    <span v-show="savingFieldFromCreatEvent" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                </button>
+        <div class=" form-button p-2  row justify-content-center border-top fixed-bottom bg-white shadow-sm">
+            <div class="col-11 col-md-6 ">
+                <div class="row">
+                    <div class="col-6 mt-1 mb-1">
+                        <!-- Cancel Button -->
+                        <button :disabled="savingFieldFromCreatEvent" type="submit" class="btn customInputButton customInputButtonTwo">
+                            <div @click="saveFieldFromCreateEvent" v-show="!savingFieldFromCreatEvent">Cancel</div>
+                            <span v-show="savingFieldFromCreatEvent" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-6 mt-1 mb-1">
+                        <button :disabled="savingFieldFromCreatEvent" type="submit" class="btn customInputButton">
+                            <div @click="saveFieldFromCreateEvent" v-show="!savingFieldFromCreatEvent">Continue</div>
+                            <span v-show="savingFieldFromCreatEvent" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
+            
         </div>
 
     </div>

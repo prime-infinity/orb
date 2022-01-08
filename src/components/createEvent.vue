@@ -3,9 +3,16 @@
        
        <div v-if="!isStarted" class="pre-event">
            <div class="row mt-1 pt-5">
-                <div class="col-10 offset-1 col-md-6 offset-md-3 mt-5">
-                <button @click="startEventCreation" class="btn customInputButton bg-dark">Create Event</button>
-            </div>
+                <div class="col-10 offset-1 col-md-6 offset-md-3 mt-5 text-center">
+                    <div>
+                        <img src="img/create event.png" class="create-av" alt="">
+                    </div>
+
+                    <a @click="startEventCreation" class="btn text-center mx-auto">
+                        <h4 class="m-0 p-0 font-weight-bold mt-2">Create Event</h4>
+                        <p class="m-0 p-0 text-muted">Get Started <span><i class="las la-arrow-right"></i></span></p>
+                    </a>
+                </div>
            </div>
        </div>
 
@@ -84,23 +91,31 @@
         background-color: white;
     }
 
+    .create-av{
+        width: 100%;
+        height: 360px;
+        object-fit: contain;
+    }
+
     .large-icon-layout{
         margin-left:-100px;
         margin-bottom:-80px;
         
     }
     .large-icon-layout i{
-        border:1px solid silver;
+        border:1px solid #FCA311;
         border-radius: 20px;
-        background: #EBF2F2;
+        background: #FCA311;
+        color: white;
         padding: 0.6em;
         font-size: 2em;
     }
 
     .small-icon-layout i{
-        border:1px solid silver;
+        border:1px solid #FCA311;
         border-radius: 16px;
-        background: #EBF2F2;
+        background: #FCA311;
+        color: white;
         padding: 0.5em;
         font-size: 1.8em;
     }
