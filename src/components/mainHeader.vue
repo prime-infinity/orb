@@ -31,7 +31,13 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <router-link to="organiserprofile">
                                     <a class="dropdown-item">
-                                        Organiser Profile
+                                        Organiser Profile 1
+                                    </a>
+                                </router-link>
+
+                                <router-link to="forganiserprofile">
+                                    <a class="dropdown-item mt-4">
+                                        Organiser Profile 2
                                     </a>
                                 </router-link>
 
@@ -129,7 +135,13 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <router-link to="organiserprofile">
                                 <a class="dropdown-item">
-                                    Organiser Profile
+                                    Organiser Profile 1
+                                </a>
+                            </router-link>
+
+                            <router-link to="forganiserprofile">
+                                <a class="dropdown-item mt-5">
+                                    Organiser Profile 2
                                 </a>
                             </router-link>
 

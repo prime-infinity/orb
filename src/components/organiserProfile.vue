@@ -336,11 +336,13 @@
                 //already has organiser profile
                 if(this.organisersProfile.length>0){
                     //not needed againdddds
+                    this.isLoadingOrganProfile = false
                 }
             }
             if(this.user === null){
                 this.$router.push('login')
             }
+            console.log(this.user);
         }
         
     }

@@ -31,9 +31,24 @@ const routes = [
     component: Index
   },*/
   {
+    path: '/forganiserprofile',
+    name: 'Index',
+    component: Index
+  },
+  {
     path: '/organiserprofile',
     name: 'organiserProfile',
     component: () => import('../views/organiserProfile.vue')
+  },
+  {
+    path: '/pg1',
+    name: 'pg1',
+    component: () => import('../views/pg1.vue')
+  },
+  {
+    path: '/pg2',
+    name: 'pg2',
+    component: () => import('../views/pg2.vue')
   },
   {
     path: '/event',

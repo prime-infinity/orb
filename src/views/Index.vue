@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!--<mainHeader />-->
+        <mainHeader />
         <keep-alive>
             <component v-bind:is="component" />
         </keep-alive>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-    //import mainHeader from '../components/mainHeader.vue'
+    import mainHeader from '../components/mainHeader.vue'
     import createEvent from '../components/createEvent.vue'
     import organiserProfile from '../components/organiserProfile.vue'
     import Home from '../components/Home.vue'
@@ -17,7 +17,7 @@
     export default {
         name: 'index',
           components: {
-            //mainHeader,
+            mainHeader,
             createEvent,
             organiserProfile,
             Home,
@@ -31,7 +31,7 @@
                 if(this.$route.path === "/createevent"){
                     return "createEvent"
                 }
-                if(this.$route.path === "/organiserprofile"){
+                if(this.$route.path === "/forganiserprofile"){
                     return "organiserProfile"
                 }
                 return false
