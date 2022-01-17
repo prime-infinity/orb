@@ -51,6 +51,16 @@ const routes = [
     component: () => import('../views/pg2.vue')
   },
   {
+    path: '/pg3',
+    name: 'pg3',
+    component: () => import('../views/pg3.vue')
+  },
+  {
+    path: '/pg4',
+    name: 'pg4',
+    component: () => import('../views/pg4.vue')
+  },
+  {
     path: '/event',
     name: 'event',
     component: () => import('../views/Event.vue')
