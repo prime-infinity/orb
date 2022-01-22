@@ -35,11 +35,6 @@
                                     </a>
                                 </router-link>
 
-                                <router-link to="forganiserprofile">
-                                    <a class="dropdown-item mt-4">
-                                        Organiser Profile 2
-                                    </a>
-                                </router-link>
 
                                 <a class="dropdown-item">
                                     Logout
@@ -82,16 +77,7 @@
                             </router-link>
                         </li>
 
-                        <li v-if="user !== null" class="nav-item mt-2 pt-2">
-                            <router-link to="">
-                                <a class="nav-link text-dark" href="#">
-                                 <span class="icon align-middle">
-                                    <i class="las la-paperclip"></i>
-                                </span>
-                                <span class="link align-middle"> My Event</span>
-                                </a>
-                            </router-link>
-                        </li>
+                       
                         
                         <div v-if="!isInEventCreation">
                             <button @click="createEvent" class="btn customInputButton bg-dark">Create Event</button>
@@ -110,11 +96,9 @@
                     <li v-if="user !== null" class="nav-item">
                             <router-link to=""><a class="nav-link" href="#">Explore</a></router-link>
                     </li>
+                    
                     <li v-if="user !== null" class="nav-item">
                         <router-link to=""><a class="nav-link" href="#">Likes & Following</a></router-link>
-                    </li>
-                    <li v-if="user !== null" class="nav-item">
-                        <router-link to=""><a class="nav-link" href="#">My Event</a></router-link>
                     </li>
                 </ul>
                 
@@ -136,12 +120,6 @@
                             <router-link to="organiserprofile">
                                 <a class="dropdown-item">
                                     Organiser Profile 1
-                                </a>
-                            </router-link>
-
-                            <router-link to="forganiserprofile">
-                                <a class="dropdown-item mt-5">
-                                    Organiser Profile 2
                                 </a>
                             </router-link>
 
