@@ -9,16 +9,16 @@
 
             <div class="ml-auto">
                 <a href="" class="text-right">
-                    <h6 class="m-0 font-weight-bold">Request Payout</h6>
-                    <p class="m-0 text-muted">Bal: NGN 200,000</p>
+                    <h6 class="m-0 font-weight-bold">Add Account</h6>
+                    <p class="m-0 text-muted">Add new payout account</p>
                 </a>
             </div>
 
         </div>
         <div class="container mt-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-6 card shadow-sm mt-3">
-                    <div class="p-3">
+                <div class="col-12 col-md-6  mt-3">
+                    <div class="p-3 card">
                         <i class="float-right">i</i>
                         <h5 class="font-weight-bold"> <i> i </i> Zenith Bank</h5>
                         <p class="text-muted m-0 p-0">****9878</p>
@@ -26,8 +26,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 card shadow-sm mt-3">
-                    <div class="p-3">
+                <div class="col-12 col-md-6  mt-3">
+                    <div class="p-3 card">
                         <i class="float-right">i</i>
                         <h5 class="font-weight-bold"> <i> i </i> Zenith Bank</h5>
                         <p class="text-muted m-0 p-0">****9878</p>
@@ -35,7 +35,6 @@
                     </div>
                 </div>
             </div>
-            <p class="smal">Add New method.</p>
         </div>
 
     </div>
@@ -58,3 +57,11 @@
         },  
     }
 </script>
+
+<style scoped>
+    .card{
+        background-color: rgb(250, 250, 250);
+        border-radius: 12px;
+        border: none;
+    }
+</style>
