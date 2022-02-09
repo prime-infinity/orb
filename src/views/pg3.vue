@@ -161,7 +161,16 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     <h3 class="text-center mt-4 mb-3">Change Password</h3>
-                                    
+
+                                     <div class="form-row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control customInput">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control customInput">
+                                        </div>
+                                    </div>
 
                                     
 

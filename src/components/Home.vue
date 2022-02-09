@@ -10,13 +10,16 @@
             <div class="row flex-row flex-nowrap pb-3 no-scroll-bar" style="overflow-x: auto;">
 
                 <div v-for="n in parseInt(numberr)" :key="n" class="col-md-5 col-11 p-2">
+                   
                     <div class="index-event-card bg-dark">
-
+                        <img src="https://picsum.photos/id/1005/400/250" alt="">
                     </div>
-                    <div class="index-event-card-footer text-white text-center p-3">
-                        <h6 class="font-weight-bold m-0 p-0">This is an event</h6>
+
+                     <div class="index-event-card-footer text-white text-center p-3">
+                        <h5 class="font-weight-bold m-0 p-0">This is an event</h5>
                         <p class="m-0 p-0">Organiser name</p>
                     </div>
+                    
                 </div>
 
             </div>
@@ -104,14 +107,22 @@
     .index-event-card{
         height: 400px;
         border-radius: 12px;
+        z-index: 0;
     }
-
+    .index-event-card img{
+        height: 400px;
+        border-radius: 12px;
+        object-fit: cover;
+        width: 100%;
+    }
     .index-event-card-footer{
-        background-color: rgba(0, 0, 0, 0.356);
+        position: sticky;
+        z-index: 999 !important;
+        background-color: rgba(0, 0, 0, 0.582);
         height: 72px;
-        margin-top: -72px;
-        z-index: inherit;
         border-radius: 0px 0px 12px 12px;
+        margin-top: -72px;
+        width: 100%;
     }
     .smallest-event{
         height: 200px;

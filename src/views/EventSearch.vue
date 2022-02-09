@@ -46,8 +46,8 @@
                                 </div>
                             </div>
                             <div class="col-3">
-                                <button class="search-button btn btn-block btn-yellow d-none d-md-block" data-toggle="modal" data-target="#exampleModal">Advanced Search</button>
-                                <button class="search-button btn btn-block btn-yellow d-block d-md-none" data-toggle="modal" data-target="#exampleModal"> <i class="la las-search"></i></button>
+                                <button class="search-button btn btn-block btn-yellow d-none d-md-block" >Search</button>
+                                <button class="search-button btn btn-block btn-yellow d-block d-md-none" > <i class="la las-search"></i></button>
                             </div>
                         </div>
 
@@ -58,24 +58,35 @@
         </header>
 
         <div class="container mt-5">
+            <!-- Filter Key -->
+            <div class="row">
+                <div class="mr-auto mb-4">
+                    <select name="" class=" form-control bg-light" id="">
+                        <option value="">Category</option>
+                    </select>
+                </div>
+                <div class="ml-auto mb-4">
+                    <button class="mb-4 btn btn-light" data-toggle="modal" data-target="#exampleModal">Filter</button>
+                </div>
+            </div>
             <!-- Nav List -->
-            <div class="row flex-row flex-nowrap no-scroll-bar" style="overflow-x: auto;">
-                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+            <div class="row flex-row flex-nowrap no-scroll-bar justify-content-center" style="overflow-x: auto;">
+                <div class="tags small text-center my-auto  py-2 px-4 mx-2">
                     <span>All</span>
                 </div>
-                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                <div class="tags small text-center my-auto py-2 px-4 mx-2">
                     <span>New</span>
                 </div>
-                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
-                    <span>Art & Culture</span>
+                <div class="tags small text-center my-auto py-2 px-4 mx-2">
+                    <span>Art&Culture</span>
                 </div>
-                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                <div class="tags small text-center my-auto py-2 px-4 mx-2">
                     <span>Entertainment</span>
                 </div>
-                <div class="col-6 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
-                    <span>Charity & Fundraiser</span>
+                <div class="tags small text-center my-auto py-2 px-4 mx-2">
+                    <span>Charity&Fundraiser</span>
                 </div>
-                <div class="col-5 col-md-2 text-center my-auto border mr-4 pt-2 pb-2">
+                <div class="tags small text-center my-auto py-2 px-4 mx-2">
                     <span>Politics</span>
                 </div>
 
@@ -610,6 +621,7 @@
     }
 </script>
 <style scoped>
+    
     .yellow-color{
         color:#FCA311;
     }
@@ -642,8 +654,11 @@
     .nav-list.active{
         background-color: #FCA311;
     }
-
-  .modal-dialog {
+    .tags{
+        background: #fafafa;
+        border-radius: 4px;
+    }
+    .modal-dialog {
         width: 100vw;
         max-width: 100vw;
         height: 100vh;
