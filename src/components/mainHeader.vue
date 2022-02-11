@@ -2,7 +2,7 @@
     <div>
 
         <nav class="navbar fixed-top navbar-expand-lg shadow-sm navbar-light pt-1 pb-1 pl-4 pr-4 bg-white ">
-            <router-link to="/"><a class="navbar-brand" href="">Logo</a></router-link>
+            <router-link to="/"><a class="navbar-brand" href=""><img src="img/OrbEventsBlue.png" class="img-fluid" alt=""></a></router-link>
 
             <transition enter-active-class="animate__animated animate__bounceIn" leave-active-class="animate__animated animate__bounceOut">
                 <span v-if="$route.path !== '/organiserprofile'" class="d-block d-lg-none" @click="toggleMobileMenu">
@@ -215,6 +215,9 @@
         height: 1.5em;
         vertical-align: middle;
         background-size: 100% 100%;
+    }
+    .navbar-brand img{
+        height: 18px;
     }
     .organiser-nav{
         padding: 0.4rem;
