@@ -3,14 +3,18 @@
         <header>
            <img src="https://images.unsplash.com/photo-1462430638866-7ad892655344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="header-img" alt="">
 
-           <div class="row header-details">
-               <div class="col-md-6 ml-5">
-                   <h1 class="header-text">Every Event <br> Begins Here</h1>
+            <div class="container">
 
-                   <a class="btn btn-lg header-cta shadow">Get Started</a>
-               </div>
-           </div>
-            
+                <div class="row header-details">
+                    <div class="col-md-6">
+                        <h1 class="header-text">Every Event <br> Begins Here</h1>
+
+                        <a class="btn btn-lg header-cta shadow">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+           
         </header>
 
         <!-- Header One -->
