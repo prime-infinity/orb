@@ -57,7 +57,7 @@
                     <i class="la-calendar-plus"></i>
                 </div>
 
-                <h2 class="mt-2" id="redHeadings">Date & Time</h2>
+                <h4 class="mt-2" id="redHeadings">Date & Time</h4>
                 <p>Tell your Attendees about your date and time schedule, so they can plan to attend.</p>
                 
                 <ul class="nav nav-pills nav-fill">

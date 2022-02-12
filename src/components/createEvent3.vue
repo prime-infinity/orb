@@ -15,7 +15,7 @@
                     <i class="las la-info"></i>
                 </div>
 
-                <h2 class="mt-2" id="redHeadings">Event Images</h2>
+                <h4 class="mt-2" id="redHeadings">Event Images</h4>
                 <p>Upload Event Images that will show your event.</p>
 
                 <div class="row">
@@ -47,7 +47,7 @@
             <div class="col-12 col-md-8 col-lg-6">
                 <div v-if="isTextSelected" class="mb-5 pb-5">
                     
-                    <h2 class="mt-2" id="redHeadings">Description</h2>
+                    <h4 class="mt-2" id="redHeadings">Description</h4>
                     <p>Tell your audience stuff about your event.</p>
 
                     <div class="row justify-content-center">
@@ -76,6 +76,57 @@
                 </div>
 
             </div>
+        </div>
+
+
+
+        <!-- Create Event Page 4 : Ticket Page -->
+        <!-- multiple date modal -->
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius:15px;">
+                   
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+
+
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div> 
+
+        <div class="row mt-3 pt-5 justify-content-center">
+            
+            <div class="col-12 col-md-8 col-lg-6">
+                
+                <!-- date icon for large view -->
+                <div class="d-none d-md-block large-icon-layout">
+                    <i class="la-calendar-plus"></i>
+                </div>
+
+                <!--date icon for mobile view-->
+                <div class="d-md-none text-left small-icon-layout">
+                    <i class="la-calendar-plus"></i>
+                </div>
+
+                <h4 class="mt-2" id="redHeadings">Add Ticket</h4>
+                <p>Tell your Attendees about your date and time schedule, so they can plan to attend.</p>
+                
+            
+            </div>
+        </div>
+
+        <div class="row pt-3 pb-5 justify-content-center">
+
+            <div class="col-12 col-md-8 col-lg-6 pb-5">
+                
+               
+            </div>
+            
         </div>
       
     </div>

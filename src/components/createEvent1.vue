@@ -5,7 +5,7 @@
         <div class="row mt-3 pt-5 justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
                 <!--Basic Form-->
-                <div class="form-input mt-5 mb-3">
+                <div class="form-input mb-3">
 
                     <!-- form icon for large view -->
                     <div class="d-none d-md-block large-icon-layout">
@@ -18,7 +18,7 @@
                     </div>
                     <!--  -->
 
-                    <h2 class="mt-2" id="redHeadings">Basic Info</h2>
+                    <h4 class="mt-2" id="redHeadings">Basic Info</h4>
                     <p>Start by telling us basic Information about your event.</p>
                     <div class="form-row">
                         <div class="form-group col-12 col-md-6">
@@ -114,7 +114,7 @@
                         <i class="las la-wrench"></i>
                     </div>
 
-                    <h2 class="mt-2" id="redHeadings">Additional Information</h2>
+                    <h4 class="mt-2" id="redHeadings">Additional Information</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic</p>
                     <div class="form-row">
                         
@@ -167,7 +167,7 @@
                         <i class="las la-map-pin"></i>
                     </div>
 
-                    <h2 class="mt-2" id="redHeadings">Location</h2>
+                    <h4 class="mt-2" id="redHeadings">Location</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic</p>
 
                 <div class="form-row">
