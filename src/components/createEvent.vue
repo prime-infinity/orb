@@ -37,6 +37,7 @@
     import createEvent1 from './createEvent1.vue'
     import createEvent2 from './createEvent2.vue'
     import createEvent3 from './createEvent3.vue'
+    import createEvent4 from './createEvent4.vue'
 
     export default {
         name: 'createEvent',
@@ -50,6 +51,7 @@
             createEvent1,
             createEvent2,
             createEvent3,
+            createEvent4,
         },
         computed:{
 
@@ -63,6 +65,9 @@
                 }
                 if(this.createEventCount === 2){
                     return "createEvent3"
+                }
+                if(this.createEventCount === 3){
+                    return "createEvent4"
                 }
                 return false
             },
