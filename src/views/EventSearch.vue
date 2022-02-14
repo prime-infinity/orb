@@ -141,11 +141,11 @@
 
                             <span class="d-flex mb-2">
                                 <span class="mr-auto">
-                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="las la-share display-5"></i> </button>
                                 </span>
                                 
                                 <span class="ml-auto">
-                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
+                                    <button class="btn btn-yellow"> <i class="las la-bookmark display-5"></i> Save </button>
                                 </span>
                             </span>
                         </div>

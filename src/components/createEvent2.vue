@@ -6,7 +6,7 @@
         <!-- multiple date modal -->
         <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content" style="border-radius:15px;">
+                <div class="modal-content">
                    
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -315,3 +315,25 @@
         },  
     }
 </script>
+
+<style scoped>
+    .modal-dialog {
+        width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        /* border-radius: 0px !important; */
+    }
+
+    .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    }
+
+    .modal-body {
+        overflow-y: auto; 
+        border-radius: 0px;
+    }
+</style>
