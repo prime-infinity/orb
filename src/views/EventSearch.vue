@@ -100,17 +100,17 @@
                         <div class="organiser-info p-2">
                             <div class="d-flex">
                                 <span>
-                                    <img src="" alt="" class="organiser-img">
+                                    <img src="https://images.unsplash.com/photo-1644789430200-f8d8578eacf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="organiser-img">
                                 </span>
                                 <span>
-                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <h6 class="small font-weight-bold m-0">Whogohost Fire</h6>
                                     <p class="small m-0">2020 Followers</p>
                                 </span>
 
                             </div>
                         </div>
                         <div class="event-image">
-                            <img src="" alt="">
+                            <img src="https://images.unsplash.com/photo-1644783009893-328f6cf43016?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                         </div>
                         
                         <div class="event-info container">
@@ -139,13 +139,13 @@
                             <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex mb-2">
+                            <span class="d-flex mb-2 event-icon">
                                 <span class="mr-auto">
-                                    <button class="btn btn-light"> <i class="las la-share display-5"></i> </button>
+                                    <button class="btn btn-light"> <i class="las la-share"></i> </button>
                                 </span>
                                 
-                                <span class="ml-auto">
-                                    <button class="btn btn-yellow"> <i class="las la-bookmark display-5"></i> Save </button>
+                                <span class="ml-auto text-white">
+                                    <button class="btn btn-yellow text-white"> <i class="las la-bookmark text-white"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -157,17 +157,17 @@
                         <div class="organiser-info p-2">
                             <div class="d-flex">
                                 <span>
-                                    <img src="" alt="" class="organiser-img">
+                                    <img src="https://images.unsplash.com/photo-1644785035688-acf0cb61e41a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="organiser-img">
                                 </span>
                                 <span>
-                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <h6 class="small font-weight-bold m-0">Niki Wath</h6>
                                     <p class="small m-0">2020 Followers</p>
                                 </span>
 
                             </div>
                         </div>
                         <div class="event-image">
-                            <img src="" alt="">
+                            <img src="https://images.unsplash.com/photo-1640622333314-05b7986f1b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                         </div>
                         
                         <div class="event-info container">
@@ -184,7 +184,7 @@
                                 </span>
 
                                 <span class="ml-auto">
-                                    <p class="font-weight-bold event-price small">Free</p>
+                                    <p class="font-weight-bold event-price small">$56,00</p>
                                 </span>
                             </span>
 
@@ -196,13 +196,13 @@
                             <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex mb-2">
+                            <span class="d-flex mb-2 event-icon">
                                 <span class="mr-auto">
-                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="las la-share"></i> </button>
                                 </span>
                                 
-                                <span class="ml-auto">
-                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
+                                <span class="ml-auto text-white">
+                                    <button class="btn btn-yellow text-white"> <i class="las la-bookmark text-white"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -214,17 +214,17 @@
                         <div class="organiser-info p-2">
                             <div class="d-flex">
                                 <span>
-                                    <img src="" alt="" class="organiser-img">
+                                    <img src="https://images.unsplash.com/photo-1644424235234-65dc0c0c98c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="organiser-img">
                                 </span>
                                 <span>
-                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <h6 class="small font-weight-bold m-0">Marvin Group</h6>
                                     <p class="small m-0">2020 Followers</p>
                                 </span>
 
                             </div>
                         </div>
                         <div class="event-image">
-                            <img src="" alt="">
+                            <img src="https://images.unsplash.com/photo-1644577524390-acb708587c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80" alt="">
                         </div>
                         
                         <div class="event-info container">
@@ -241,7 +241,7 @@
                                 </span>
 
                                 <span class="ml-auto">
-                                    <p class="font-weight-bold event-price small">Free</p>
+                                    <p class="font-weight-bold event-price small">$565,00</p>
                                 </span>
                             </span>
 
@@ -253,13 +253,13 @@
                             <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex mb-2">
+                            <span class="d-flex mb-2 event-icon">
                                 <span class="mr-auto">
-                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="las la-share"></i> </button>
                                 </span>
                                 
-                                <span class="ml-auto">
-                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
+                                <span class="ml-auto text-white">
+                                    <button class="btn btn-yellow text-white"> <i class="las la-bookmark text-white"></i> Save </button>
                                 </span>
                             </span>
                         </div>
@@ -271,17 +271,17 @@
                         <div class="organiser-info p-2">
                             <div class="d-flex">
                                 <span>
-                                    <img src="" alt="" class="organiser-img">
+                                    <img src="https://images.unsplash.com/photo-1644424235234-65dc0c0c98c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="organiser-img">
                                 </span>
                                 <span>
-                                    <h6 class="small font-weight-bold m-0">Davido</h6>
+                                    <h6 class="small font-weight-bold m-0">Sultan Ent</h6>
                                     <p class="small m-0">2020 Followers</p>
                                 </span>
 
                             </div>
                         </div>
                         <div class="event-image">
-                            <img src="" alt="">
+                            <img src="https://images.unsplash.com/photo-1644661847825-56b30afd7f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                         </div>
                         
                         <div class="event-info container">
@@ -298,7 +298,7 @@
                                 </span>
 
                                 <span class="ml-auto">
-                                    <p class="font-weight-bold event-price small">Free</p>
+                                    <p class="font-weight-bold event-price small">$565,00</p>
                                 </span>
                             </span>
 
@@ -310,18 +310,19 @@
                             <p  style="margin-top:-8px;" class="text-muted"><span class="yellow-color">Eastwood </span>Lagos Nigeria</p>
 
 
-                            <span class="d-flex mb-2">
+                            <span class="d-flex mb-2 event-icon">
                                 <span class="mr-auto">
-                                    <button class="btn btn-light"> <i class="la las-share">t</i> </button>
+                                    <button class="btn btn-light"> <i class="las la-share"></i> </button>
                                 </span>
                                 
-                                <span class="ml-auto">
-                                    <button class="btn btn-yellow"> <i class="la las-love"></i> Save </button>
+                                <span class="ml-auto text-white">
+                                    <button class="btn btn-yellow text-white"> <i class="las la-bookmark text-white"></i> Save </button>
                                 </span>
                             </span>
                         </div>
                     </div>
                 </div>
+
 
                 
             </div>
@@ -714,7 +715,9 @@
         overflow: hidden;
     }
 
-    
+    .event-icon i{
+        font-size: 20px;
+    }
     .card{
         border:none;
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
