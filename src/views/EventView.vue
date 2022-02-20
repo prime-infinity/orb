@@ -716,7 +716,7 @@
 </script>
 <style scoped>
     .yellow-color{
-        color:#FCA311;
+        color:#F3A13B;
     }
 
     .header-image{
@@ -769,10 +769,10 @@
         box-shadow:none;
     }
     .main-color{
-        background-color:#FCA311;
+        background-color:#F3A13B;
     }
     .main-outline{
-        border: solid 1px #FCA311;
+        border: solid 1px #F3A13B;
     }
     .modal-dialog {
         width: 100vw;

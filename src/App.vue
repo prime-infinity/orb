@@ -31,8 +31,13 @@
     color:#000000;
   }
   #redleft{
-    height: 1043px;
-    background: #000000;
+    /* height: 1043px; */
+    height: 100vh;
+    /* background: #d5ba8e2d; */
+    background: url('https://images.unsplash.com/photo-1587999633485-2c16737226c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .dates-button{
     background: #EBF2F2;
@@ -41,8 +46,8 @@
   }
   .dateSelected{
     background-color:#FEE3B8; ;
-    color:#FCA311;
-    border:1px solid #FCA311;
+    color:#F3A13B;
+    border:1px solid #F3A13B;
   }
   .customInput{
     background: #EBF2F2;
@@ -52,7 +57,7 @@
   .customInput:focus,
   .customInput:hover{
     transition:.5s ease;
-    border:1px solid #FCA311;
+    border:1px solid #F3A13B;
     background-color: white;
     box-shadow: inset 0 0  0.1rem 0 #262421;
   }

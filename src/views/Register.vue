@@ -6,8 +6,8 @@
             <div class="row pt-4">
                 <div class="col-11 col-md-8 col-lg-6 mx-auto">
                     <div class="auth-header">
-                        <h2 class="font-weight-bold  float-left">Sign Up</h2>
-                        <h2 class="font-weight-bold float-right text-danger">Logo</h2>
+                        <h3 class="font-weight-bold  float-left">Register</h3>
+                        <div class="float-right"><img src="/img/OrbEventsYellow.png" width="120" alt=""></div>
                     </div>
 
                     <form @submit.prevent="registerUser">
@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="row mb-4">
-                            <span class="col-11 mx-auto small">
+                            <span class="col-11 mx-auto small text-muted">
                                 By creating an account you're agreeing with our <a href="" class="text-dark font-weight-bold">Terms of Use </a>,
                                 <a href="" class="text-dark font-weight-bold">Privacy Policy</a>, and <a href="" class="text-dark font-weight-bold">Email Notifications</a>.
                             </span>
@@ -39,26 +39,9 @@
                             <span v-show="registering" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                         </button>
 
-                        <hr class="divider">
 
-                        <div class="row">
-                            <div class="col-9">
-                                 <button :disabled="registering" type="submit" class="btn customInputButton bg-dark">
-                                    <div v-show="!registering">Sign up with Google</div>
-                                    <span v-show="registering" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                                </button>
-                            </div>
-
-                            <div class="col-3">
-                                 <button :disabled="registering" type="submit" class="btn customInputButton bg-light text-dark">
-                                    <div v-show="!registering"><i class="lab la-facebook-f"></i></div>
-                                    <span v-show="registering" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="text-center mt-4">
-                            Already have an account <router-link to="login"><a href="#">Sign In</a></router-link>
+                        <div class="text-center mt-4 text-muted">
+                            Already have an account <router-link to="login"><a href="#" class="text-dark">Sign In</a></router-link>
                         </div>
                                         
                     </form>

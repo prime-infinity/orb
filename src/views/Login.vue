@@ -1,14 +1,16 @@
 <template>
     <div class="row pt-4 pt-md-0">
 
+       
+
         <div class="col-12 col-md-7 pt-4">
 
-            <div class="row pt-4">
+            <div class="row pt-5">
                 <div class="col-11 col-md-8 col-lg-6 mx-auto">
 
                     <div class="auth-header">
-                        <h2 class="font-weight-bold  float-left">Sign In</h2>
-                        <h2 class="font-weight-bold float-right text-danger">Logo</h2>
+                        <h3 class="font-weight-bold  float-left">Sign In</h3>
+                        <div class="float-right"><img src="/img/OrbEventsYellow.png" width="120" alt=""></div>
                     </div>
 
                     <form @submit.prevent="loginUser">
@@ -28,12 +30,12 @@
                         </button>
 
                         <div class="mt-3 ">
-                            <a href="#"><p class="font-weight-bold">Forgot Password?</p></a>
+                            <a href="#" class="text-muted"><p >Forgot Password?</p></a>
                         </div>
                         
-                        <hr class="divider">
+                        <!-- <hr class="divider"> -->
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-9">
                                  <button :disabled="loggin" type="submit" class="btn customInputButton bg-dark">
                                     <div v-show="!loggin">Sign in with Google</div>
@@ -47,10 +49,10 @@
                                     <span v-show="loggin" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                 </button>
                             </div>
-                        </div>
+                        </div> -->
                         
-                        <div class="text-center mt-4">
-                            Not yet a member <router-link to="register"><a href="#">Create an account</a></router-link>
+                        <div class="text-center text-muted mt-5 pt-5">
+                            Not yet a member <router-link to="register"><a href="#" class="text-dark">Create an account</a></router-link>
                         </div>
   
                     </form>
@@ -59,9 +61,10 @@
             
         </div>
 
-        <div class="col-12 col-md-5 d-none d-md-block" id="redleft">
-
+         <div class="col-12 col-md-5 d-none d-md-block" id="redleft">
         </div>
+
+      
     </div>
 </template>
 

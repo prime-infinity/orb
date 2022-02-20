@@ -114,7 +114,7 @@
     .profile-img{
         width: 200px;
         height: 200px;
-        background-color: #FCA311;
+        background-color: #F3A13B;
         border-radius: 100%;
         margin-top: -80px;
         object-fit: cover;
@@ -130,7 +130,7 @@
     .org-cont i{
         font-size: 24px;
         padding-top: 8px;
-        color: #FCA311;
+        color: #F3A13B;
     }
     .org-cont:hover{
         /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */

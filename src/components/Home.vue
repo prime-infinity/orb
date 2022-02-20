@@ -178,7 +178,7 @@
         color: white;
     }
     .header-cta{
-        background-color: #FCA311;
+        background-color: #F3A13B;
         color: white;
     }
     .index-event-card{

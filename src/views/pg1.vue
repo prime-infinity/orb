@@ -108,7 +108,7 @@
 
 <style scoped>
     .bg-one{
-        background-color: #FCA311;
+        background-color: #F3A13B;
     }
    .event-card-img{
         width: 100%;

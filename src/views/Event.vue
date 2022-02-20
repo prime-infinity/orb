@@ -122,7 +122,7 @@
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 .date-text{
-    color:#FCA311;
+    color:#F3A13B;
     margin-top: -12px;
     margin-bottom: -12px;
 }

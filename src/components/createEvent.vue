@@ -108,18 +108,18 @@
         
     }
     .large-icon-layout i{
-        border:1px solid #FCA311;
+        border:1px solid #F3A13B;
         border-radius: 20px;
-        background: #FCA311;
+        background: #F3A13B;
         color: white;
         padding: 0.6em;
         font-size: 2em;
     }
 
     .small-icon-layout i{
-        border:1px solid #FCA311;
+        border:1px solid #F3A13B;
         border-radius: 16px;
-        background: #FCA311;
+        background: #F3A13B;
         color: white;
         padding: 0.5em;
         font-size: 1.8em;
