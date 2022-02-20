@@ -7,38 +7,45 @@
         <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
-                   
+                   <!-- Modal Body -->
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <div class="row justify-content-center">
+                             <div class="row mt-3 pt-5 justify-content-center">
+                                <div class="col-12 col-md-8 col-lg-6">
+                                    <!-- Form -->
+                                    <div class="row justify-content-center">
 
-                                <div class="col-12 mt-4 mb-4">
-                                    <h5>Event Date</h5>
-                                    <vueDatePickCustom v-model="date" :hasInputElement="true"></vueDatePickCustom>
+                                        <div class="col-12 mt-4 mb-4">
+                                            <h5>Event Date</h5>
+                                            <vueDatePickCustom v-model="date" :hasInputElement="true"></vueDatePickCustom>
+                                        </div>
+
+                                        <div class="col-6 mt-4">
+                                            <h5>Event Start Time</h5>
+                                            <vue-timepicker format="hh:mm A" v-model="openingTime" close-on-complete></vue-timepicker>
+                                        </div>
+
+                                        <div class="col-6 mt-4">
+                                            <h5>Event End Time</h5>
+                                            <vue-timepicker format="hh:mm A" v-model="closingTime" close-on-complete></vue-timepicker>
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <button :disabled="cannotAddDate" class="btn customInputButton mt-5" @click="addDateAndTimeMul" data-dismiss="modal">Add</button>
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <button class="btn customInputButton mt-5 bg-white" style="color:red;border:1px solid red;" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                    <!-- Form -->
                                 </div>
-
-                                <div class="col-6 mt-4">
-                                    <h5>Event Start Time</h5>
-                                    <vue-timepicker format="hh:mm A" v-model="openingTime" close-on-complete></vue-timepicker>
-                                </div>
-
-                                <div class="col-6 mt-4">
-                                    <h5>Event End Time</h5>
-                                    <vue-timepicker format="hh:mm A" v-model="closingTime" close-on-complete></vue-timepicker>
-                                </div>
-
-                                <div class="col-6 mb-4">
-                                    <button :disabled="cannotAddDate" class="btn customInputButton mt-5" @click="addDateAndTimeMul" data-dismiss="modal">Add</button>
-                                </div>
-
-                                <div class="col-6 mb-4">
-                                    <button class="btn customInputButton mt-5 bg-white" style="color:red;border:1px solid red;" data-dismiss="modal">Close</button>
-                                </div>
-
-                            </div>
+                             </div>
+                            
                         </div>
                     </div>
-                
+                    <!-- Modal Body -->
                 </div>
             </div>
         </div> 
@@ -49,16 +56,16 @@
                 
                 <!-- date icon for large view -->
                 <div class="d-none d-md-block large-icon-layout">
-                    <i class="la-calendar-plus"></i>
+                    <i class="las la-calendar "></i>
                 </div>
 
                 <!--date icon for mobile view-->
                 <div class="d-md-none text-left small-icon-layout">
-                    <i class="la-calendar-plus"></i>
+                    <i class="las la-calendar"></i>
                 </div>
 
-                <h4 class="mt-2" id="redHeadings">Date & Time</h4>
-                <p>Tell your Attendees about your date and time schedule, so they can plan to attend.</p>
+                <h4 class="mt-2 mb-0" id="redHeadings">Date & Time</h4>
+                <p class="mt-0 mb-3 text-muted small">Tell your Attendees about your date and time schedule, so they can plan to attend.</p>
                 
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item mr-2" @click="selSingle">
@@ -80,7 +87,7 @@
                 
                 <div v-if="isSingleSelected" class="mb-5 pb-5">
                     
-                    <p>Explantion For single date</p>
+                    <p class="small">Explantion For single date</p>
                     
                     <div class="row justify-content-center">
 
@@ -90,17 +97,17 @@
                             <div class="row justify-content-center">
 
                                 <div class="col-12 mt-4">
-                                    <h5>Event Date</h5>
+                                    <label for="eventDate" class="">Event Date <span class="text-danger">*</span></label>
                                     <vueDatePickCustom v-model="date" :hasInputElement="true"></vueDatePickCustom>
                                 </div>
 
                                 <div class="col-md-6 mt-3">
-                                    <h5>Event Start Time</h5>
+                                    <label for="startTime" class="">Event Start Time <span class="text-danger">*</span></label>
                                     <vue-timepicker format="hh:mm A" v-model="openingTime" close-on-complete></vue-timepicker>
                                 </div>
 
                                 <div class="col-md-6 mt-3">
-                                    <h5>Event End Time</h5>
+                                    <label for="endTime" class="">Event End Time <span class="text-danger">*</span></label>
                                     <vue-timepicker format="hh:mm A" v-model="closingTime" close-on-complete></vue-timepicker>
                                 </div>
 
@@ -114,7 +121,7 @@
 
                 <div v-if="isMultipleSelected" class="mb-5 pb-5">
 
-                    <p>Multiple dates events occur sporacically with their time</p>
+                    <p class="small text-muted">Multiple dates events occur sporacically with their time</p>
                     
 
                     <div class="row justify-content-center">
@@ -157,13 +164,7 @@
                     
                 </div>
 
-                <div  v-if="!tooMuchMultipleDates" class="form-button row justify-content-center fixed-bottom bg-white shadow-sm">
-                    <div class="col-10 col-lg-6 col-md-8 col-sm-8 mt-1 mb-1">
-                        <button :disabled="cannotAddDate" type="submit" class="btn customInputButton">
-                            <div @click="getPropOfSing">Save and continue</div>
-                        </button>
-                    </div>
-                </div>
+                
 
                 <div v-if="tooMuchMultipleDates" class="form-button row justify-content-center fixed-bottom bg-white shadow-sm">
                     <div class="col-10 col-lg-6 col-md-8 col-sm-8 mt-1 mb-1 text-danger">
@@ -175,6 +176,31 @@
             
         </div>
         
+
+        <!--  -->
+        <div class=" form-button p-2  row justify-content-center border-top fixed-bottom bg-white shadow-sm">
+            <div class="col-11 col-md-6 ">
+                <div class="row">
+                    <div class="col-6 mt-1 mb-1">
+                        <!-- Cancel Button -->
+                        <button :disabled="savingFieldFromCreatEvent" type="submit" class="btn customInputButton customInputButtonTwo">
+                            <div @click="saveFieldFromCreateEvent" v-show="!savingFieldFromCreatEvent">Cancel</div>
+                            <span v-show="savingFieldFromCreatEvent" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-6 mt-1 mb-1">
+                        
+                        <div  v-if="!tooMuchMultipleDates" class="form-button  bg-white shadow-sm">
+                            <button :disabled="cannotAddDate" type="submit" class="btn customInputButton">
+                                <div @click="getPropOfSing">Save and continue</div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
 
 </template>

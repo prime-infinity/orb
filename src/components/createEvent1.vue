@@ -5,7 +5,7 @@
         <div class="row mt-3 pt-5 justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
                 <!--Basic Form-->
-                <div class="form-input mb-3">
+                <div class=" ">
 
                     <!-- form icon for large view -->
                     <div class="d-none d-md-block large-icon-layout">
@@ -18,8 +18,8 @@
                     </div>
                     <!--  -->
 
-                    <h4 class="mt-2" id="redHeadings">Basic Info</h4>
-                    <p>Start by telling us basic Information about your event.</p>
+                    <h4 class="mt-2 mb-0" id="redHeadings">Basic Info</h4>
+                    <p class="mt-0 mb-3 text-muted small">Start by telling us basic Information about your event.</p>
                     <div class="form-row">
                         <div class="form-group col-12 col-md-6">
                             <label for="eventName" class="">Event name or title <span class="text-danger">*</span> </label>
@@ -97,7 +97,7 @@
         </div>
 
         <!--div for other option -->
-        <div class="row mb-5 justify-content-center">
+        <div class="row justify-content-center">
             
 
             <div class="col-12 col-md-8 col-lg-6 mt-5">
@@ -114,8 +114,8 @@
                         <i class="las la-wrench"></i>
                     </div>
 
-                    <h4 class="mt-2" id="redHeadings">Additional Information</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic</p>
+                    <h4 class="mt-2 mb-0" id="redHeadings">Additional Information</h4>
+                    <p class="mt-0 mb-3 text-muted small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic</p>
                     <div class="form-row">
                         
                         <div class="form-group col-12 col-md-6 ">
@@ -167,8 +167,8 @@
                         <i class="las la-map-pin"></i>
                     </div>
 
-                    <h4 class="mt-2" id="redHeadings">Location</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic</p>
+                    <h4 class="mt-2 mb-0" id="redHeadings">Location</h4>
+                    <p class="mt-0 mb-3 text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic</p>
 
                 <div class="form-row">
                     <div class="form-group col-12">
@@ -182,7 +182,8 @@
 
         </div>
 
-        <div class=" form-button p-2  row justify-content-center border-top fixed-bottom bg-white shadow-sm">
+        <!-- Footer Button -->
+        <div class=" form-button p-2 mt-5 row justify-content-center border-top fixed-bottom bg-white shadow-sm">
             <div class="col-11 col-md-6 ">
                 <div class="row">
                     <div class="col-6 mt-1 mb-1">
@@ -200,8 +201,10 @@
                     </div>
                 </div>
             </div>
+            <!-- /footer Button -->
             
         </div>
+        <!-- /Footer Button -->
 
     </div>
 </template>

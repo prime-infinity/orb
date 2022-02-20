@@ -7,16 +7,16 @@
 
                 <!--icon concerning description for large view -->
                 <div class="d-none d-md-block large-icon-layout">
-                    <i class="las la-info"></i>
+                    <i class="las la-image"></i>
                 </div>
 
                 <!--icon concerning description for mobile view-->
                 <div class="d-md-none text-left small-icon-layout">
-                    <i class="las la-info"></i>
+                    <i class="las la-image"></i>
                 </div>
 
-                <h4 class="mt-2" id="redHeadings">Event Images</h4>
-                <p>Upload Event Images that will show your event.</p>
+                <h4 class="mt-2 mb-0" id="redHeadings">Event Images</h4>
+                <p class="mt-0 mb-3 text-muted">Upload Event Images that will show your event.</p>
 
                 <div class="row">
                     <div class="col-12">
@@ -45,10 +45,20 @@
 
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
-                <div v-if="isTextSelected" class="mb-5 pb-5">
+                <div v-if="isTextSelected" class="mb-5  pb-5">
                     
-                    <h4 class="mt-2" id="redHeadings">Description</h4>
-                    <p>Tell your audience stuff about your event.</p>
+                    <!--icon concerning description for large view -->
+                <div class="d-none d-md-block large-icon-layout">
+                    <i class="las la-scroll"></i>
+                </div>
+
+                <!--icon concerning description for mobile view-->
+                <div class="d-md-none text-left small-icon-layout">
+                    <i class="las la-scroll"></i>
+                </div>
+
+                    <h4 class="mt-2 mb-0" id="redHeadings">Description</h4>
+                    <p class="mt-0 mb-3 text-muted">Tell your audience stuff about your event.</p>
 
                     <div class="row justify-content-center">
                         
@@ -61,73 +71,32 @@
 
                 </div>
 
-                <div class="mb-5 pb-5">
-                    
-                    
 
-                </div>
+            </div>
+        </div>
 
-                <div class="form-button row justify-content-center fixed-bottom bg-white shadow-sm">
-                    <div class="col-10 col-lg-6 col-md-8 col-sm-8 mt-1 mb-1">
-                        <button :disabled="cannotContinue" type="submit" class="btn customInputButton">
+          <!-- Footer Button -->
+        <div class=" form-button p-2  row justify-content-center border-top fixed-bottom bg-white shadow-sm">
+            <div class="col-11 col-md-6 ">
+                <div class="row">
+                    <div class="col-6 mt-1 mb-1">
+                        <!-- Cancel Button -->
+                        <button type="submit" class="btn customInputButton customInputButtonTwo">
+                            <div v-show="!savingFieldFromCreatEvent3" >Cancel</div>
+                            <!-- <span  class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> -->
+                        </button>
+                    </div>
+                    <div class="col-6 mt-1 mb-1">
+                       <button :disabled="cannotContinue" type="submit" class="btn customInputButton">
                             <div @click="getData">Save and continue</div>
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
+        <!-- /footer Button -->
 
 
-
-        <!-- Create Event Page 4 : Ticket Page -->
-        <!-- multiple date modal -->
-        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content" style="border-radius:15px;">
-                   
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row justify-content-center">
-
-
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        </div> 
-
-        <div class="row mt-3 pt-5 justify-content-center">
-            
-            <div class="col-12 col-md-8 col-lg-6">
-                
-                <!-- date icon for large view -->
-                <div class="d-none d-md-block large-icon-layout">
-                    <i class="la-calendar-plus"></i>
-                </div>
-
-                <!--date icon for mobile view-->
-                <div class="d-md-none text-left small-icon-layout">
-                    <i class="la-calendar-plus"></i>
-                </div>
-
-                <h4 class="mt-2" id="redHeadings">Add Ticket</h4>
-                <p>Tell your Attendees about your date and time schedule, so they can plan to attend.</p>
-                
-            
-            </div>
-        </div>
-
-        <div class="row pt-3 pb-5 justify-content-center">
-
-            <div class="col-12 col-md-8 col-lg-6 pb-5">
-                
-               
-            </div>
-            
-        </div>
       
     </div>
 

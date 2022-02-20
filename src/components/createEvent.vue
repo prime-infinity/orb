@@ -5,7 +5,7 @@
            <div class="row mt-1 pt-5">
                 <div class="col-10 offset-1 col-md-6 offset-md-3 mt-5 text-center">
                     <div>
-                        <img src="img/create event.png" class="create-av" alt="">
+                        <img src="img/illustrations/music file2-08.svg" class="create-av" alt="">
                     </div>
 
                     <a @click="startEventCreation" class="btn text-center mx-auto">
