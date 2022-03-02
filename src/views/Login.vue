@@ -1,8 +1,10 @@
 <template>
+
+    <div class="container-fluid">
+
     <div class="row pt-4 pt-md-0">
 
-       
-
+    
         <div class="col-12 col-md-7 pt-4">
 
             <div class="row pt-5">
@@ -64,7 +66,7 @@
          <div class="col-12 col-md-5 d-none d-md-block" id="redleft">
         </div>
 
-      
+    </div>
     </div>
 </template>
 
