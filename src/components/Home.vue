@@ -1,6 +1,9 @@
 <template>
     <div>
-        <header>
+
+        <Wrapper />
+        
+        <!--<header>
            <img src="https://images.unsplash.com/photo-1462430638866-7ad892655344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="header-img" alt="">
 
             <div class="container">
@@ -15,7 +18,7 @@
 
             </div>
            
-        </header>
+        </header>-->
 
         <!-- Header One -->
         <div class="container mt-5">
@@ -132,8 +135,14 @@
 </template>
 
 <script>
+
+    import Wrapper from '../components/ui/Wrapper.vue'
+
     export default {
         name: 'Home',
+        components: {
+            Wrapper
+        },
         data(){
             return{
                 numberr:10,
@@ -210,9 +219,6 @@
         width: 100%;
         object-fit: cover;
         border-radius: 12px;
-    }
-    .smallest-event h5{
-        /* margin-bottom: 240px; */
     }
     .small-event{
         height: 300px;
