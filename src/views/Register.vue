@@ -24,10 +24,7 @@
                             <input v-model="userData.password" type="password" class="form-control customInput" id="exampleInputPassword1" Placeholder="Enter password">
                             <small v-if="errors.password" class="text-danger">{{ errors.password[0] }}</small>
                         </div>
-                        <div class="form-group mb-4">
-                            <input v-model="userData.password_confirmation" type="password" class="form-control customInput" id="exampleInputPasswordConfirm1" Placeholder="Confirm password">
-                        </div>
-
+                        
                         <div class="row mb-4">
                             <span class="col-11 mx-auto small text-muted">
                                 By creating an account you're agreeing with our <a href="" class="text-dark font-weight-bold">Terms of Use </a>,
@@ -68,7 +65,6 @@
                     name:'',
                     email:'',
                     password:'',
-                    password_confirmation:'',
                 },
                 errors:{},
                 registering:false,
@@ -85,15 +81,17 @@
             registerUser:function(){
                 this.registering = true
             
-                this.$http.post(this.backendhost+"/register",this.userData)
+                this.$http.post(this.backendhost+"/api/users",this.userData)
                 .then((res) =>{
-                    console.log(res)
-                    this.$store.commit("registerUser",this.userData)
+                    console.log(res.data)
+                    console.log(res.headers["x-auth-token"]);
+                    /*this.$store.commit("registerUser",res.data)
                     this.$router.push("/")
-                    this.registering = false
+                    this.registering = false*/
                 })
                 .catch((err) => {
-                   this.errors = err.response.data.errors
+                    console.log(err.response.data);
+                   //this.errors = err.response.data.errors
                    this.registering = false
                 })
             },

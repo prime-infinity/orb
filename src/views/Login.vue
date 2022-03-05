@@ -96,10 +96,10 @@
                 this.errors.password =  "";
                 this.loggin = true
 
-                this.$http.get(this.backendhost+`/register?email=${this.userData.email}&password=${this.userData.password}`,this.userData)
+                this.$http.post(this.backendhost+"/api/auth",this.userData)
                 .then((res) =>{
                     //test login
-                    if(res.data.length > 0){
+                    /*if(res.data.length > 0){
  
                         this.$store.commit("registerUser",res.data[0])
                         this.$router.push("/")
@@ -112,11 +112,13 @@
                             this.loggin = false
                         }, 1000);
                         
-                    }
+                    }*/
+                    console.log(res);
 
                 })
                 .catch((err) => {
-                   this.errors = err.response.data.errors
+                    console.log(err.response);
+                   /*this.errors = err.response.data.errors*/
                    this.loggin = false
                 })
             },
