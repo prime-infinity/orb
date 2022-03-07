@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import { getUserFromLocal } from '../helpers/auth'
 
 Vue.use(Vuex)
+
+const user = getUserFromLocal();
 
 export default new Vuex.Store({
 
   state: {
 
-    //backendhost:'https://my-json-server.typicode.com/prime-infinity/orb',
-    backendhost:'http://localhost:5000',
-    auth:null,
+    auth:user,
+    isLoggedIn: !!user,
     createEventCount:0,
     organisersProfile:[],
     newOrganImage:null,
@@ -20,8 +22,15 @@ export default new Vuex.Store({
   mutations: {
 
     registerUser(state,gotten){
+      state.isLoggedIn = true
       state.auth = gotten
-      //localStorage.setItem("auth",JSON.stringify(payload))
+      
+      localStorage.setItem("auth",JSON.stringify(state.auth))
+    },
+    logout(state){
+      localStorage.removeItem("auth");
+      state.isLoggedIn = false;
+      state.auth = null
     },
 
     incrementEventCounter(state,gotten){

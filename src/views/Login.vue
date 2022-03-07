@@ -89,6 +89,8 @@
 </template>
 
 <script>
+import { login } from "../helpers/auth";
+
 export default {
   name: "Login",
   data() {
@@ -105,18 +107,17 @@ export default {
     loginUser: function() {
       this.loggin = true;
 
-      this.$http
-        .post(this.backendhost + "/api/auth", this.userData)
+      login(this.userData)
         .then((res) => {
-          this.$store.commit("registerUser", this.userData);
+          console.log(res);
+          this.$store.commit("registerUser", res);
           this.$router.push("/");
           this.loggin = false;
-          console.log(res);
         })
         .catch((err) => {
-          console.log(err.response);
-          /*this.errors = err.response.data.errors*/
+          console.log(err);
           this.loggin = false;
+          this.errors = err.response.data.errors;
         });
     },
   },
