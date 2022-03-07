@@ -85,9 +85,9 @@
                 .then((res) =>{
                     console.log(res.data)
                     console.log(res.headers["x-auth-token"]);
-                    /*this.$store.commit("registerUser",res.data)
+                    /*this.$store.commit("registerUser",res.data)*/
                     this.$router.push("/")
-                    this.registering = false*/
+                    this.registering = false
                 })
                 .catch((err) => {
                     console.log(err.response.data);
