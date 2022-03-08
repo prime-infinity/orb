@@ -20,9 +20,6 @@
                   id="exampleInputName1"
                   Placeholder="Your name"
                 />
-                <small v-if="errors.name" class="text-danger">{{
-                  errors.name[0]
-                }}</small>
               </div>
               <div class="form-group mb-4">
                 <input
@@ -33,9 +30,6 @@
                   aria-describedby="emailHelp"
                   Placeholder="Email address"
                 />
-                <small v-if="errors.email" class="text-danger">{{
-                  errors.email[0]
-                }}</small>
               </div>
               <div class="form-group mb-4">
                 <input
@@ -45,9 +39,6 @@
                   id="exampleInputPassword1"
                   Placeholder="Enter password"
                 />
-                <small v-if="errors.password" class="text-danger">{{
-                  errors.password[0]
-                }}</small>
               </div>
 
               <div class="row mb-4">
@@ -62,6 +53,12 @@
                     >Email Notifications</a
                   >.
                 </span>
+              </div>
+
+              <div className="row text-center" v-if="error">
+                <div className="col-12">
+                  <small className="text-danger">{{ error }}</small>
+                </div>
               </div>
 
               <button
@@ -98,7 +95,7 @@
 import { registerUser } from "../helpers/auth";
 
 export default {
-  name: "register",
+  name: "Register",
   data() {
     return {
       userData: {
@@ -106,25 +103,26 @@ export default {
         email: "",
         password: "",
       },
-      errors: {},
+      error: null,
       registering: false,
     };
   },
   methods: {
     registerUser: function() {
       this.registering = true;
+      this.error = null;
 
       registerUser(this.userData)
         .then((res) => {
-          console.log(res);
+          this.error = null;
           this.$store.commit("registerUser", res);
           this.$router.push("/");
-          this.loggin = false;
         })
         .catch((err) => {
-          console.log(err);
-          this.loggin = false;
-          this.errors = err.response.data.errors;
+          this.registering = false;
+          err.response?.data
+            ? (this.error = err.response.data)
+            : (this.error = err.message);
         });
     },
   },

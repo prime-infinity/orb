@@ -9,7 +9,7 @@ export function login(data){
             res({...result.data, token:result.headers["x-auth-token"]})
         })
         .catch((err)=>{
-            rej(err.response)
+            rej(err)
         })
     })
 }
@@ -21,7 +21,7 @@ export function registerUser(data){
             res({...result.data, token:result.headers["x-auth-token"]})
         })
         .catch((err)=>{
-            rej(err.response)
+            rej(err)
         })
     })
 }
