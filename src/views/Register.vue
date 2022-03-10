@@ -41,6 +41,12 @@
                 />
               </div>
 
+              <div class="row text-center" v-if="error">
+                <div class="col-12">
+                  <small class="text-danger">{{ error }}</small>
+                </div>
+              </div>
+
               <div class="row mb-4">
                 <span class="col-11 mx-auto small text-muted">
                   By creating an account you're agreeing with our
@@ -53,12 +59,6 @@
                     >Email Notifications</a
                   >.
                 </span>
-              </div>
-
-              <div className="row text-center" v-if="error">
-                <div className="col-12">
-                  <small className="text-danger">{{ error }}</small>
-                </div>
               </div>
 
               <button

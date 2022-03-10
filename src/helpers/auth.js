@@ -5,7 +5,7 @@ const backendHost = "http://localhost:5000/api/";
 export function login(data) {
   return new Promise((res, rej) => {
     axios
-      .post(backendHost + "auth", data)
+      .post(backendHost + "login", data)
       .then((result) => {
         res({ ...result.data, token: result.headers["x-auth-token"] });
       })
@@ -18,7 +18,7 @@ export function login(data) {
 export function registerUser(data) {
   return new Promise((res, rej) => {
     axios
-      .post(backendHost + "users", data)
+      .post(backendHost + "register", data)
       .then((result) => {
         res({ ...result.data, token: result.headers["x-auth-token"] });
       })

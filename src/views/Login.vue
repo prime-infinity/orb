@@ -33,9 +33,9 @@
                 />
               </div>
 
-              <div className="row text-center" v-if="error">
-                <div className="col-12">
-                  <small className="text-danger">{{ error }}</small>
+              <div class="row text-center" v-if="error">
+                <div class="col-12">
+                  <small class="text-danger">{{ error }}</small>
                 </div>
               </div>
 
