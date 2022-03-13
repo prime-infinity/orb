@@ -12,8 +12,8 @@ export default new Vuex.Store({
     auth: user,
     isLoggedIn: !!user,
     createEventCount: 0,
-    organisersProfile: [],
-    newOrganImage: null,
+    organisersProfile: [], //
+    newOrganImage: null, //
   },
 
   mutations: {
