@@ -624,16 +624,16 @@
 <style scoped>
     
     .yellow-color{
-        color:#FCA311;
+        color:#F3A13B;
     }
     .btn-yellow{
-        background-color: #FCA311 !important;
+        background-color: #F3A13B !important;
     }
     .organiser-img{
         width: 32px;
         height: 32px;
         object-fit: cover;
-        background-color: #FCA311;
+        background-color: #F3A13B;
         margin-right: 4px;
         border-radius: 8px;
     }
@@ -653,7 +653,7 @@
         border-radius: 4px;   
     }
     .nav-list.active{
-        background-color: #FCA311;
+        background-color: #F3A13B;
     }
     .tags{
         background: #fafafa;
