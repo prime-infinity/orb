@@ -31,7 +31,12 @@
                   placeholder="Enter Password"
                   id="exampleInputPassword1"
                 />
-                <small v-if="errors" class="text-danger">{{ errors }}</small>
+              </div>
+
+              <div class="row text-center" v-if="error">
+                <div class="col-12">
+                  <small class="text-danger">{{ error }}</small>
+                </div>
               </div>
 
               <button
@@ -99,25 +104,26 @@ export default {
         email: "",
         password: "",
       },
-      errors: null,
+      error: null,
       loggin: false,
     };
   },
   methods: {
     loginUser: function() {
       this.loggin = true;
+      this.error = null;
 
       login(this.userData)
         .then((res) => {
-          console.log(res);
+          this.loggin = false;
           this.$store.commit("registerUser", res);
           this.$router.push("/");
-          this.loggin = false;
         })
         .catch((err) => {
-          console.log(err);
           this.loggin = false;
-          this.errors = err.response.data.errors;
+          err.response?.data
+            ? (this.error = err.response.data)
+            : (this.error = err.message);
         });
     },
   },
