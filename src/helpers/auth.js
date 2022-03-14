@@ -35,3 +35,16 @@ export function getUserFromLocal() {
   }
   return JSON.parse(userStr);
 }
+
+export function initOrgan(token) {
+  axios
+    .post(backendHost + "initorgan", {
+      headers: { "x-auth-token": token },
+    })
+    .then((res) => {
+      console.log("done", res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}

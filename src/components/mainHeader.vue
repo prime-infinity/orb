@@ -200,7 +200,9 @@ export default {
   methods: {
     routeToOrganProfile: function() {
       this.mobileMenu = false;
-      this.$router.push("organiserprofile");
+      this.user.isOrganiser === false
+        ? this.$router.push("organiserprofile")
+        : console.log("ll");
     },
     //v-if="$route.path !== '/organiserprofile'"
     createEvent: function() {

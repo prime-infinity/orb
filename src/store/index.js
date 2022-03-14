@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { getUserFromLocal } from "../helpers/auth";
+import { getUserFromLocal, initOrgan } from "../helpers/auth";
 
 Vue.use(Vuex);
 
@@ -9,25 +9,32 @@ const user = getUserFromLocal();
 export default new Vuex.Store({
   state: {
     auth: user,
-    isLoggedIn: !!user,
+    //isLoggedIn: !!user,
     createEventCount: 0,
-    organisersProfile: [], //
-    newOrganImage: null, //
+    //organisersProfile: [], //
+    //newOrganImage: null, //
   },
 
   mutations: {
     registerUser(state, gotten) {
-      state.isLoggedIn = true;
+      //state.isLoggedIn = true;
       state.auth = gotten;
 
       localStorage.setItem("orbauth", JSON.stringify(state.auth));
     },
     logout(state) {
       localStorage.removeItem("orbauth");
-      state.isLoggedIn = false;
+      //state.isLoggedIn = false;
       state.auth = null;
     },
+    initOrganProfile(state) {
+      //sets the isOrganProfile to trut in both state,localstorage and database
+      state.auth.isOrganiser = true;
+      localStorage.setItem("orbauth", JSON.stringify(state.auth));
+      initOrgan(state.auth.token);
+    },
 
+    //all the below are not sure off
     incrementEventCounter(state, gotten) {
       state.createEventCount = gotten;
     },
@@ -35,30 +42,9 @@ export default new Vuex.Store({
     goToEventCreation(state, gotten) {
       state.createEventCount = gotten;
     },
-
-    /*setOrganProfile(state, gotten) {
-      state.organisersProfile = gotten;
-    },
-
-    organCreated(state, gotten) {
-      state.organisersProfile.push(gotten);
-    },*/
   },
 
-  actions: {
-    /*organProfile(context, elsee) {
-      console.log(this.state.backendhost);
-
-      axios
-        .get(this.state.backendhost + `/organProfile?email=${elsee.email}`)
-        .then((res) => {
-          context.commit("setOrganProfile", res.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },*/
-  },
+  actions: {},
 
   modules: {},
 });

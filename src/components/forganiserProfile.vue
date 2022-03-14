@@ -1,6 +1,5 @@
 <template>
   <div>
-    <InitOrganiser v-on:inited="initCreate" v-if="user.isOrganiser === false" />
     <!--<div
       v-if="isLoadingOrganProfile"
       class="d-flex justify-content-center mt-5 pt-5"
