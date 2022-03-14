@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import axios from "axios";
 import { getUserFromLocal } from "../helpers/auth";
 
 Vue.use(Vuex);
@@ -37,17 +36,17 @@ export default new Vuex.Store({
       state.createEventCount = gotten;
     },
 
-    setOrganProfile(state, gotten) {
+    /*setOrganProfile(state, gotten) {
       state.organisersProfile = gotten;
     },
 
     organCreated(state, gotten) {
       state.organisersProfile.push(gotten);
-    },
+    },*/
   },
 
   actions: {
-    organProfile(context, elsee) {
+    /*organProfile(context, elsee) {
       console.log(this.state.backendhost);
 
       axios
@@ -58,7 +57,7 @@ export default new Vuex.Store({
         .catch((error) => {
           console.log(error);
         });
-    },
+    },*/
   },
 
   modules: {},
