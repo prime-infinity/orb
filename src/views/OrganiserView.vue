@@ -92,7 +92,7 @@
 
 <script>
 export default {
-  name: "organiserProfile",
+  name: "OrganiserView",
   data() {
     return {};
   },

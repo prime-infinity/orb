@@ -5,7 +5,7 @@ const backendHost = "http://localhost:5000/api/";
 export function login(data) {
   return new Promise((res, rej) => {
     axios
-      .post(backendHost + "login", data)
+      .post(backendHost + "users/login", data)
       .then((result) => {
         res({ ...result.data, token: result.headers["x-auth-token"] });
       })
@@ -38,7 +38,7 @@ export function getUserFromLocal() {
 
 export function initOrgan(token) {
   axios
-    .post(backendHost + "initorgan", {
+    .post(backendHost + "users/initorgan", {
       headers: { "x-auth-token": token },
     })
     .then((res) => {
@@ -47,4 +47,19 @@ export function initOrgan(token) {
     .catch((err) => {
       console.log(err);
     });
+}
+
+export function submitOrgan(data, token) {
+  return new Promise((res, rej) => {
+    axios
+      .post(backendHost + "organiser", data, {
+        headers: { "x-auth-token": token },
+      })
+      .then((result) => {
+        res(result);
+      })
+      .catch((err) => {
+        rej(err);
+      });
+  });
 }

@@ -109,6 +109,12 @@
             </div>
           </div>
 
+          <div class="row text-center" v-if="error">
+            <div class="col-12">
+              <small class="text-danger">{{ error }}</small>
+            </div>
+          </div>
+
           <div
             class="form-button row justify-content-center fixed-bottom bg-white shadow-sm"
           >
@@ -134,11 +140,14 @@
   </div>
 </template>
 <script>
+import { organFormOne } from "../../helpers/auth";
+
 export default {
   name: "OrganiserForm",
   data() {
     return {
       saving: false,
+      error: null,
       formData: {
         name: "",
         description: "",
@@ -149,9 +158,27 @@ export default {
       },
     };
   },
+  computed: {
+    ...mapState({
+      user: "auth",
+    }),
+  },
   methods: {
     save: function() {
-      console.log(this.formData);
+      this.saving = true;
+      this.error = null;
+
+      submitOrgan(this.formData, this.user.token)
+        .then((res) => {
+          this.saving = false;
+          console.log("done saing organ form", res);
+        })
+        .catch((err) => {
+          this.loggin = false;
+          err.response?.data
+            ? (this.error = err.response.data)
+            : (this.error = err.message);
+        });
     },
   },
 };

@@ -9,10 +9,7 @@ const user = getUserFromLocal();
 export default new Vuex.Store({
   state: {
     auth: user,
-    //isLoggedIn: !!user,
     createEventCount: 0,
-    //organisersProfile: [], //
-    //newOrganImage: null, //
   },
 
   mutations: {

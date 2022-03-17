@@ -202,7 +202,7 @@ export default {
       this.mobileMenu = false;
       this.user.isOrganiser === false
         ? this.$router.push("organiserprofile")
-        : console.log("ll");
+        : this.$router.push("organiserview");
     },
     //v-if="$route.path !== '/organiserprofile'"
     createEvent: function() {
