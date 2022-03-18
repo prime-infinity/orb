@@ -156,7 +156,7 @@
                 Organiser Profile
               </a>
 
-              <a class="dropdown-item">
+              <a class="dropdown-item" @click="logout">
                 Logout
               </a>
             </div>
@@ -211,6 +211,9 @@ export default {
     },
     toggleMobileMenu: function() {
       this.mobileMenu ? (this.mobileMenu = false) : (this.mobileMenu = true);
+    },
+    logout: function() {
+      this.$store.commit("logout");
     },
   },
 };
