@@ -140,7 +140,8 @@
   </div>
 </template>
 <script>
-import { organFormOne } from "../../helpers/auth";
+import { mapState } from "vuex";
+import { submitOrgan } from "../../helpers/auth";
 
 export default {
   name: "OrganiserForm",
