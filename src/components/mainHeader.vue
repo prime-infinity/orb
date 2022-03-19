@@ -53,7 +53,7 @@
                   Organiser Profile
                 </a>
 
-                <a class="dropdown-item">
+                <a class="dropdown-item" @click="logout">
                   Logout
                 </a>
               </div>

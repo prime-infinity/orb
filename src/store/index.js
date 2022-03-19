@@ -10,18 +10,17 @@ export default new Vuex.Store({
   state: {
     auth: user,
     createEventCount: 0,
+    organiserProfile: null,
   },
 
   mutations: {
     registerUser(state, gotten) {
       //state.isLoggedIn = true;
       state.auth = gotten;
-
       localStorage.setItem("orbauth", JSON.stringify(state.auth));
     },
     logout(state) {
       localStorage.removeItem("orbauth");
-      //state.isLoggedIn = false;
       state.auth = null;
     },
     initOrganProfile(state) {
@@ -29,6 +28,10 @@ export default new Vuex.Store({
       state.auth.isOrganiser = true;
       localStorage.setItem("orbauth", JSON.stringify(state.auth));
       initOrgan(state.auth.token);
+    },
+    setOrganiserProfile(state, gotten) {
+      //fill in data from organiser, from create or from get request
+      state.organiserProfile = gotten;
     },
 
     //all the below are not sure off

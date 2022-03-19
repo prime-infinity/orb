@@ -5,7 +5,7 @@
         <h2>About Organiser</h2>
         <h6>Let Attendees Know About Who is Hosting Events.</h6>
 
-        <div class="form-input mb-5">
+        <div class="form-input" style="margin-bottom:50%;">
           <!-- organiser name -->
           <div class=" mb-4">
             <label for="organiserName" class="font-weight-bold"
@@ -172,10 +172,11 @@ export default {
       submitOrgan(this.formData, this.user.token)
         .then((res) => {
           this.saving = false;
-          console.log("done saing organ form", res);
+          this.$store.commit("setOrganiserProfile", res.data);
+          this.$router.push("/organiserview");
         })
         .catch((err) => {
-          this.loggin = false;
+          this.saving = false;
           err.response?.data
             ? (this.error = err.response.data)
             : (this.error = err.message);

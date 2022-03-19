@@ -38,7 +38,7 @@ export function getUserFromLocal() {
 
 export function initOrgan(token) {
   axios
-    .post(backendHost + "users/initorgan", {
+    .post(backendHost + "users/initorgan", true, {
       headers: { "x-auth-token": token },
     })
     .then((res) => {

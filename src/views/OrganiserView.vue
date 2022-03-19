@@ -10,8 +10,8 @@
     <div class="container mt-4">
       <div class="row justify-content-center text-center">
         <div class="col-md-8">
-          <h3 class="font-weight-bold">John Doe</h3>
-          <p>This is the organsire blurb or something</p>
+          <h3 class="font-weight-bold">{{ organiser.name }}</h3>
+          <p>{{ organiser.description }}</p>
 
           <div class="d-flex text-center align-items-center">
             <div class="d-flex mx-auto">
@@ -32,6 +32,14 @@
 
           <div class="text-content text-left text-muted mt-3">
             <p>
+              you kept some text here before, but they are commented out.
+              <br />I am not sure they have any use, yet
+            </p>
+            <p>
+              Also, i think the Contact icons above should somehow show the
+              details of the organiser
+            </p>
+            <!--<p>
               There are no limits on who can become a great entrepreneur. You
               don’t necessarily need a college degree, a bunch of money in the
               bank to start something that could become the next major success.
@@ -82,7 +90,7 @@
               business-plan and business profile write up guide! Learning about
               your startup is the first step to start a new business and this
               course is here to help you get started in a profitable way.
-            </p>
+            </p>-->
           </div>
         </div>
       </div>
@@ -91,12 +99,17 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "OrganiserView",
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    ...mapState({
+      organiser: "organiserProfile",
+    }),
+  },
   methods: {},
 };
 </script>
