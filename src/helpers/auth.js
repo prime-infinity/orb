@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const backendHost = "http://localhost:5000/api/";
+//const backendHost = "http://localhost:5000/api/";
+const backendHost = "https://orbbackend.herokuapp.com/api/";
 
 export function login(data) {
   return new Promise((res, rej) => {
