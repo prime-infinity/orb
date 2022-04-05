@@ -1,7 +1,7 @@
 import axios from "axios";
 
-//const backendHost = "http://localhost:5000/api/";
-const backendHost = "https://orbbackend.herokuapp.com/api/";
+const backendHost = "http://localhost:2000/api/";
+//const backendHost = "https://orbbackend.herokuapp.com/api/";
 
 export function login(data) {
   return new Promise((res, rej) => {
@@ -43,7 +43,7 @@ export function initOrgan(token) {
       headers: { "x-auth-token": token },
     })
     .then((res) => {
-      console.log("done", res);
+      console.log("done", res.data);
     })
     .catch((err) => {
       console.log(err);
@@ -63,4 +63,19 @@ export function submitOrgan(data, token) {
         rej(err);
       });
   });
+}
+
+export async function getOrganiserProfile(token) {
+  try {
+    const { data } = await axios.get(
+      backendHost + "organiser/getorganiserprofile",
+      {
+        headers: { "x-auth-token": token },
+      }
+    );
+    return data;
+  } catch (e) {
+    console.log(e.message);
+    return null;
+  }
 }

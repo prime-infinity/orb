@@ -71,11 +71,7 @@ export default {
       }
     },
   },
-  methods: {
-    goToEventCreation: function(e) {
-      this.$store.commit("goToEventCreation", e);
-    },
-  },
+  methods: {},
 };
 </script>
 

@@ -10,9 +10,9 @@
     <div class="container mt-4">
       <div class="row justify-content-center text-center">
         <div class="col-md-8">
-          <h3 class="font-weight-bold">{{ organiser.name }}</h3>
-          <p>{{ organiser.description }}</p>
-
+          <h3 class="font-weight-bold">{{ organiser && organiser.name }}</h3>
+          <p>{{ organiser && organiser.description }}</p>
+          <h1>{{ organiser.email }}</h1>
           <div class="d-flex text-center align-items-center">
             <div class="d-flex mx-auto">
               <span class="org-cont">
@@ -111,6 +111,12 @@ export default {
     }),
   },
   methods: {},
+  mounted() {
+    if (this.organiser == null) {
+      this.$router.push("/organiserprofile");
+    }
+    console.log("organiser is", this.organiser);
+  },
 };
 </script>
 

@@ -1,16 +1,35 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { getUserFromLocal, initOrgan } from "../helpers/auth";
+import {
+  getUserFromLocal,
+  initOrgan,
+  getOrganiserProfile,
+} from "../helpers/auth";
 
 Vue.use(Vuex);
 
 const user = getUserFromLocal();
 
+const getOrganiserP = async (token) => {
+  /*getOrganiserProfile(token)
+    .then((res) => {
+      return res;
+    })
+    .catch((err) => {
+      return err;
+    });*/
+
+  const data = await getOrganiserProfile(token);
+  //console.log(data);
+  return data;
+};
+
 export default new Vuex.Store({
   state: {
     auth: user,
     createEventCount: 0,
-    organiserProfile: null,
+    organiserProfile:
+      user?.isOrganiser === true ? getOrganiserP(user.token) : null,
   },
 
   mutations: {
