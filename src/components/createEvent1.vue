@@ -21,7 +21,7 @@
             Start by telling us basic Information about your event.
           </p>
           <div class="form-row">
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12">
               <label for="eventName" class=""
                 >Event name or title <span class="text-danger">*</span>
               </label>
@@ -58,18 +58,24 @@
                 <option value="Conference or Convention">
                   Conference or Convention
                 </option>
-                <option value="5"> Dinner or Gala </option>
-                <option value="6"> Festival or Fair </option>
-                <option value="7"> Meeting or Networking Event </option>
-                <option value="8"> Others </option>
-                <option value="9"> Party or Social Gathering </option>
-                <option value="10"> Race or Endurance Event </option>
-                <option value="11"> Rally </option>
-                <option value="12"> Screening </option>
-                <option value="13"> Seminar </option>
-                <option value="14"> Tour </option>
-                <option value="15"> Tournament </option>
-                <option value="16"> Tradeshow or Expo </option>
+                <option value="Dinner or Gala"> Dinner or Gala </option>
+                <option value="Festival or Fair"> Festival or Fair </option>
+                <option value="Meeting or Networking Event">
+                  Meeting or Networking Event
+                </option>
+                <option value="Others"> Others </option>
+                <option value="Party or Social Gathering">
+                  Party or Social Gathering
+                </option>
+                <option value="Race or Endurance Event">
+                  Race or Endurance Event
+                </option>
+                <option value="Rally"> Rally </option>
+                <option value="Screening"> Screening </option>
+                <option value="Seminar"> Seminar </option>
+                <option value="Tour"> Tour </option>
+                <option value="Tournament"> Tournament </option>
+                <option value="Tradeshow or Expo"> Tradeshow or Expo </option>
               </select>
             </div>
 
@@ -85,25 +91,35 @@
                 required
               >
                 <option value="" selected disabled>Please select option</option>
-                <option value="0">Auto, Boat & Air </option>
-                <option value="1">Business & Professional </option>
-                <option value="2">Causes & Charities</option>
-                <option value="3">Community & Culture</option>
-                <option value="4">Family & Education</option>
-                <option value="5">Fashion & Beauty </option>
-                <option value="6">Film, Media & Entertainment </option>
-                <option value="7">Food & Drink </option>
-                <option value="8">Government & Politics </option>
-                <option value="9">Health & Wellness </option>
-                <option value="10">Home & Lifestyle </option>
-                <option value="11">Music </option>
-                <option value="12">Performing & Visual Arts </option>
-                <option value="13">Religion & Spiritually </option>
-                <option value="14">School Activities </option>
-                <option value="15">STEM </option>
-                <option value="16">Seasonal </option>
-                <option value="17">Sports & Fitness </option>
-                <option value="18">Travel & Outdoor </option>
+                <option value="Auto, Boat & Air">Auto, Boat & Air </option>
+                <option value="Business & Professional"
+                  >Business & Professional
+                </option>
+                <option value="Causes & Charities">Causes & Charities</option>
+                <option value="Community & Culture">Community & Culture</option>
+                <option value="Family & Education">Family & Education</option>
+                <option value="Fashion & Beauty">Fashion & Beauty </option>
+                <option value="film, Media & Entertainment"
+                  >Film, Media & Entertainment
+                </option>
+                <option value="Food & Drink">Food & Drink </option>
+                <option value="Government & Politics"
+                  >Government & Politics
+                </option>
+                <option value="Health & Wellness">Health & Wellness </option>
+                <option value="Home & Lifestyle">Home & Lifestyle </option>
+                <option value="Music">Music </option>
+                <option value="Performing & Visual Arts"
+                  >Performing & Visual Arts
+                </option>
+                <option value="Religion & Spiritually"
+                  >Religion & Spiritually
+                </option>
+                <option value="School Activities">School Activities </option>
+                <option value="STEM">STEM </option>
+                <option value="Seasonal">Seasonal </option>
+                <option value="Sports & Fitness">Sports & Fitness </option>
+                <option value="Travel & Outdoor">Travel & Outdoor </option>
               </select>
             </div>
           </div>
@@ -142,8 +158,8 @@
                 required
               >
                 <option value="" selected disabled>Please select option</option>
-                <option value="0"> yes </option>
-                <option value="1"> no </option>
+                <option value="yes"> yes </option>
+                <option value="no"> no </option>
               </select>
             </div>
 
@@ -158,11 +174,11 @@
                 required
               >
                 <option value="" selected disabled>Please select option</option>
-                <option value="0"> All </option>
-                <option value="1"> 0-10 </option>
-                <option value="2"> 10-16 </option>
-                <option value="3"> 10-18 </option>
-                <option value="4"> 18-above </option>
+                <option value="All"> All </option>
+                <option value="0-10"> 0-10 </option>
+                <option value="10-16"> 10-16 </option>
+                <option value="10-18"> 10-18 </option>
+                <option value="18-above"> 18-above </option>
               </select>
             </div>
           </div>
@@ -171,8 +187,8 @@
     </div>
 
     <!-- for location -->
-    <div class="row mb-5 pb-4 justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6 mt-3">
+    <div class="row mb-5 pb-5 justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6 mt-3 mb-5 pb-5">
         <!-- form icon for large view -->
         <div class="d-none d-md-block large-icon-layout">
           <i class="las la-map-pin"></i>
@@ -208,9 +224,14 @@
       class=" form-button p-2 mt-5 row justify-content-center border-top fixed-bottom bg-white shadow-sm"
     >
       <div class="col-11 col-md-6 ">
+        <div class="row justify-content-center my-2" v-if="errors">
+          <div class="col-10 text-center">
+            <small class="text-danger">{{ errors }}</small>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-6 mt-1 mb-1">
-            <!-- Cancel Button -->
+          <!--<div class="col-6 mt-1 mb-1">
+            
             <button
               :disabled="saving"
               type="submit"
@@ -226,8 +247,8 @@
                 aria-hidden="true"
               ></span>
             </button>
-          </div>
-          <div class="col-6 mt-1 mb-1">
+          </div>-->
+          <div class="col-12 mt-1 mb-1">
             <button
               :disabled="saving"
               type="submit"
@@ -254,6 +275,7 @@
 
 <script>
 import { mapState } from "vuex";
+import { createEventOne } from "../helpers/auth";
 export default {
   name: "createEvent1",
   data() {
@@ -281,7 +303,16 @@ export default {
       this.saving = true;
       this.errors = null;
 
-      console.log(this.formData);
+      createEventOne(this.formData, this.user.token)
+        .then((res) => {
+          console.log(res);
+          this.$store.commit("incrementEventCounter", 1);
+        })
+        .catch((err) => {
+          this.saving = false;
+          this.errors = err;
+          console.log(err);
+        });
     },
   },
   mounted() {},

@@ -79,3 +79,18 @@ export async function getOrganiserProfile(token) {
     return null;
   }
 }
+
+export function createEventOne(data, token) {
+  return new Promise((res, rej) => {
+    axios
+      .post(backendHost + "create-event/one", data, {
+        headers: { "x-auth-token": token },
+      })
+      .then((result) => {
+        res(result.data);
+      })
+      .catch((err) => {
+        rej(err.response.data);
+      });
+  });
+}
